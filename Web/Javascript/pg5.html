@@ -1,0 +1,22 @@
+<html> 
+	<head>
+	<script type="text/javascript">
+		function pessoa(nome, idade){
+			this.nome = nome;
+			this.idade = idade;
+		}
+		
+		var vitor = new pessoa("Vitor Bruno", 18);
+	</script>
+	
+	</head>
+	
+	<body>
+		<script type="text/javascript"> 
+			var frase = ("Oi! Sou " + vitor.nome + " e tenho " + vitor.idade + " anos");
+			
+			document.write("\""+ frase + "\"<p>");
+			document.write("A frase acima possui " + frase.length + " caracteres");
+		</script>	
+	</body>
+</html>
