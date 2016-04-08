@@ -1,0 +1,16 @@
+n = 2520
+b1 = 1
+b2 = 1
+teste = 2*3*5*7
+while b2 == 1:
+	teste = teste+teste
+	b1 = 1
+	j = 2
+	while j < n and b1 == 1:
+		if teste % j != 0:
+			b1 = 0
+		j = j+1
+	if b1 == 1:
+		b2 = 0
+	print teste
+print teste
