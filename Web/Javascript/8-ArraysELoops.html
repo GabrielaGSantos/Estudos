@@ -1,0 +1,21 @@
+<html> 
+	<head>
+	<script type="text/javascript">
+		function Livro(titulo, autor) {
+			this.titulo = titulo;
+			this.autor = autor;
+		}
+	</script>
+	
+	</head>
+	
+	<body>
+		<script type="text/javascript"> 
+			var livro = []
+			livro.push( new Livro("Dom Casmurro", "Machado de Assis"), new Livro("O Corti\xE7o", "Alu\xEDsio Azevedo"), new Livro("A Moreninha", "Joaquim Manuel de Macedo"));
+			for (var i = 0; i <= 2; i++) {
+				document.write("O livro \"" + livro[i].titulo + "\" foi escrito por " + livro[i].autor + "<br>");
+			}
+		</script>	
+	</body>
+</html>
