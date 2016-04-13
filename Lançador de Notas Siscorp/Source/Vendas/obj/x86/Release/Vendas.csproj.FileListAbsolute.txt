@@ -1,0 +1,28 @@
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\bin\Release\Lançador de Notas SISCORP.exe.config
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\bin\Release\Lançador de Notas SISCORP.exe.manifest
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\bin\Release\Lançador de Notas SISCORP.application
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\bin\Release\Lançador de Notas SISCORP.exe
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\bin\Release\Lançador de Notas SISCORP.pdb
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Vendas.csprojResolveAssemblyReference.cache
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Vendas.Buscar.resources
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Vendas.Principal.resources
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Vendas.csproj.GenerateResource.Cache
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Lançador de Notas SISCORP.TrustInfo.xml
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Lançador de Notas SISCORP.exe.manifest
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Lançador de Notas SISCORP.application
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Lançador de Notas SISCORP.exe
+C:\Users\vbob\Documents\Visual Studio 2015\Projects\Vendas\obj\x86\Release\Lançador de Notas SISCORP.pdb
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\bin\Release\Lançador de Notas SISCORP.exe.config
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Lançador de Notas SISCORP.exe
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Lançador de Notas SISCORP.pdb
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\bin\Release\Lançador de Notas SISCORP.exe
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\bin\Release\Lançador de Notas SISCORP.pdb
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Vendas.csprojResolveAssemblyReference.cache
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Vendas.Buscar.resources
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Vendas.Principal.resources
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Vendas.csproj.GenerateResource.Cache
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\bin\Release\Lançador de Notas SISCORP.exe.manifest
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\bin\Release\Lançador de Notas SISCORP.application
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Lançador de Notas SISCORP.TrustInfo.xml
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Lançador de Notas SISCORP.exe.manifest
+D:\Trabalhos\Lançador de Notas Siscorp\Source\Vendas\obj\x86\Release\Lançador de Notas SISCORP.application

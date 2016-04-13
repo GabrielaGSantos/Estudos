@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="3.10">
+   <NFe>
+      <infNFe Id="NFe29160102288814000107550010000022451000130875" versao="3.10">
+         <ide>
+            <cUF>29</cUF>
+            <cNF>00013087</cNF>
+            <natOp>Venda</natOp>
+            <indPag>1</indPag>
+            <mod>55</mod>
+            <serie>1</serie>
+            <nNF>2245</nNF>
+            <dhEmi>2016-01-04T07:36:00-03:00</dhEmi>
+            <dhSaiEnt>2016-01-04T08:00:00-03:00</dhSaiEnt>
+            <tpNF>1</tpNF>
+            <idDest>2</idDest>
+            <cMunFG>2924009</cMunFG>
+            <tpImp>1</tpImp>
+            <tpEmis>1</tpEmis>
+            <cDV>5</cDV>
+            <tpAmb>1</tpAmb>
+            <finNFe>1</finNFe>
+            <indFinal>0</indFinal>
+            <indPres>0</indPres>
+            <procEmi>3</procEmi>
+            <verProc>3.10.74</verProc>
+         </ide>
+         <emit>
+            <CNPJ>02288814000107</CNPJ>
+            <xNome>AAT International Ltda</xNome>
+            <enderEmit>
+               <xLgr>Av. Maranhão</xLgr>
+               <nro>24</nro>
+               <xCpl>Lot. Sal Torrado II</xCpl>
+               <xBairro>Chesf</xBairro>
+               <cMun>2924009</cMun>
+               <xMun>Paulo Afonso</xMun>
+               <UF>BA</UF>
+               <CEP>48606500</CEP>
+               <cPais>1058</cPais>
+               <xPais>BRASIL</xPais>
+               <fone>7532819018</fone>
+            </enderEmit>
+            <IE>53255974</IE>
+            <IM>46946</IM>
+            <CNAE>0511804</CNAE>
+            <CRT>3</CRT>
+         </emit>
+         <dest>
+            <CNPJ>08648946000170</CNPJ>
+            <xNome>R &amp; M Piscicultura Ltda</xNome>
+            <enderDest>
+               <xLgr>Fazenda Santa Rita</xLgr>
+               <nro>S/N</nro>
+               <xBairro>Zona Rural</xBairro>
+               <cMun>2608057</cMun>
+               <xMun>Jatoba</xMun>
+               <UF>PE</UF>
+               <CEP>56470000</CEP>
+               <cPais>1058</cPais>
+               <xPais>BRASIL</xPais>
+               <fone>7591360206</fone>
+            </enderDest>
+            <indIEDest>1</indIEDest>
+            <IE>034821899</IE>
+         </dest>
+         <det nItem="1">
+            <prod>
+               <cProd>017</cProd>
+               <cEAN />
+               <xProd>Juvenil de Tilapia Vacinado 26 - 35gr</xProd>
+               <NCM>03019991</NCM>
+               <CFOP>6101</CFOP>
+               <uCom>Mil</uCom>
+               <qCom>15.0000</qCom>
+               <vUnCom>590.0000000000</vUnCom>
+               <vProd>8850.00</vProd>
+               <cEANTrib />
+               <uTrib>Mil</uTrib>
+               <qTrib>15.0000</qTrib>
+               <vUnTrib>590.0000000000</vUnTrib>
+               <indTot>1</indTot>
+            </prod>
+            <imposto>
+               <ICMS>
+                  <ICMS00>
+                     <orig>0</orig>
+                     <CST>00</CST>
+                     <modBC>3</modBC>
+                     <vBC>8850.00</vBC>
+                     <pICMS>12.0000</pICMS>
+                     <vICMS>1062.00</vICMS>
+                  </ICMS00>
+               </ICMS>
+               <PIS>
+                  <PISAliq>
+                     <CST>01</CST>
+                     <vBC>8850.00</vBC>
+                     <pPIS>1.6500</pPIS>
+                     <vPIS>146.03</vPIS>
+                  </PISAliq>
+               </PIS>
+               <COFINS>
+                  <COFINSAliq>
+                     <CST>01</CST>
+                     <vBC>8850.00</vBC>
+                     <pCOFINS>7.6000</pCOFINS>
+                     <vCOFINS>672.60</vCOFINS>
+                  </COFINSAliq>
+               </COFINS>
+            </imposto>
+         </det>
+         <total>
+            <ICMSTot>
+               <vBC>8850.00</vBC>
+               <vICMS>1062.00</vICMS>
+               <vICMSDeson>0.00</vICMSDeson>
+               <vFCPUFDest>0.00</vFCPUFDest>
+               <vICMSUFDest>0.00</vICMSUFDest>
+               <vICMSUFRemet>0.00</vICMSUFRemet>
+               <vBCST>0.00</vBCST>
+               <vST>0.00</vST>
+               <vProd>8850.00</vProd>
+               <vFrete>0.00</vFrete>
+               <vSeg>0.00</vSeg>
+               <vDesc>0.00</vDesc>
+               <vII>0.00</vII>
+               <vIPI>0.00</vIPI>
+               <vPIS>146.03</vPIS>
+               <vCOFINS>672.60</vCOFINS>
+               <vOutro>0.00</vOutro>
+               <vNF>8850.00</vNF>
+               <vTotTrib>0.00</vTotTrib>
+            </ICMSTot>
+         </total>
+         <transp>
+            <modFrete>1</modFrete>
+         </transp>
+      </infNFe>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+         <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+            <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+            <Reference URI="#NFe29160102288814000107550010000022451000130875">
+               <Transforms>
+                  <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                  <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+               </Transforms>
+               <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+               <DigestValue>ZVtyXoJAUno3965YM9XeF3v8kjQ=</DigestValue>
+            </Reference>
+         </SignedInfo>
+         <SignatureValue>ms9Qv4BBHxRZm9OVWjKhlJeoWv4xGoaeo1wugvAhi4Umsg5Sc+vmZX++r8hs3ltD2kOc/EXC26hq
+mDtc2T36CG0wecnYQ5SdZd1Z3O8GyrK4LSjOTo/bX1rPc2MpoUT6L7bBmR+4TWsv4kmNAvV4oycB
+sssuOHCNNH9IWhgP7wI8Gb2HAqvwZjUXXQ5aIwAbOVDTd77JP72jgTgVb8gnyAooSeMUu8hzZ2Fg
++5osOphFKLz/Og2kLGUEATnfbK98hEBGt4G85BHcouDNdRcIHCePU1hGetdXG8hEqx3AM+LeTkdq
+N/5dd9nu97K/6vSe5hIVPccSBAsxU9YRgNXgkw==</SignatureValue>
+         <KeyInfo>
+            <X509Data>
+               <X509Certificate>MIIIXDCCBkSgAwIBAgIQEfbFzHt3oWRWnm/KFy8lzzANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQG
+EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRv
+cmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTMx
+MDExMDAwMDAwWhcNMTYxMDA5MjM1OTU5WjCB4zELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1C
+cmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBE
+aWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTMxFTATBgNVBAsUDElEIC0gNTMzNDcy
+ODEjMCEGA1UEAxMaQUFUIElOVEVSTkFUSU9OQUwgTFREQSBFUFAxLDAqBgkqhkiG9w0BCQEWHWFk
+aWxzb24ubG9wZXNAZ3J1cG9tcGUuY29tLmJyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAs4wmjEmnsQcF8eQYqIJ3GoC0cxl42TNdWb9QJc4vIr8lencVLPXbFa3sc1VdbXX8u+eInbku
+60AGbnIHDDzCu6Mou6QJdxQhH7hqe/p7LbJoIvSgqRaYXlF4lHIQobE9rOTe7JNOtJ+xzWLEnRFi
+SwkaR3osXBLv4rXmvbZIyN4fswhU7drcG16Ml4WUXp0a8R/1s33bJyOxd86ltOnI5sryWYfDcmgO
+7BgkhneKLucRQe068jKadDFXoGoaEvvIya7OFgDu8T94BrTuej1Br9LhFp1SlINvphlpgTvW4Efx
+SVK706zodiXClFhSoolGDyB25ZgS2519e2Qp/UwkIQIDAQABo4IDeDCCA3Qwgb4GA1UdEQSBtjCB
+s6A9BgVgTAEDBKA0BDIyMjAzMTk0NzE4MTgzOTU2NzM0MDAwMDAwMDAwMDAwMDAwMDA4MDc1NDc3
+ODFJRlBSSqAfBgVgTAEDAqAWBBRSRU5BVE8gUklCRUlSTyBBQlJFVaAZBgVgTAEDA6AQBA4wMjI4
+ODgxNDAwMDEwN6AXBgVgTAEDB6AOBAwwMDAwMDAwMDAwMDCBHWFkaWxzb24ubG9wZXNAZ3J1cG9t
+cGUuY29tLmJyMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAUnVDPvf8kyq+xM+sX4kJ6jmkqjlMwDgYD
+VR0PAQH/BAQDAgXgMIGJBgNVHSAEgYEwfzB9BgZgTAECAwUwczBxBggrBgEFBQcCARZlaHR0cDov
+L2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvQUNfQ2VydGlzaWdu
+X011bHRpcGxhL0RQQ19BQ19DZXJ0aVNpZ25NdWx0aXBsYS5wZGYwggElBgNVHR8EggEcMIIBGDBc
+oFqgWIZWaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9sY3Iv
+QUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9pY3AtYnJh
+c2lsLm91dHJhbGNyLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1
+L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9yZXBvc2l0b3Jpby5pY3BicmFzaWwuZ292LmJy
+L2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwHQYDVR0l
+BBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIGgBggrBgEFBQcBAQSBkzCBkDBkBggrBgEFBQcwAoZY
+aHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fk
+b3MvQUNfQ2VydGlzaWduX011bHRpcGxhX0c1LnA3YzAoBggrBgEFBQcwAYYcaHR0cDovL29jc3Au
+Y2VydGlzaWduLmNvbS5icjANBgkqhkiG9w0BAQsFAAOCAgEAqXIXLsrKGjpDFv3KUEM/dFlST2CW
+o57ewgHAmpcUGNoCS0V5tCggsDuBhz+yejyxNqplXtMcTaB7T518jPeLw53kV8SbvVsvbBjO3a76
+9GRTy1Gja0y40uzXDlHz687KGeYi/XAxOBJk3yOd7OCy7WIvKIUzUkrF8GypfuMWeeRs5D25XqWC
+Y4Mei8qI/ZEz/JstARi5OufRvMY8SmzrYRUOwXBBI2D2Kx6lQpM1ZO7KSLX8IzkUSmV8fUIU6NcN
+uh46v7qWGzAq0cFeHoGtc5TqlM4K0dNQ1r+dGhdCEmb5gjSGfLOR1/TyJBOnme6f0A2TSq868h79
+RDsX1lVBfW3XgKSFA/g+3gT1WL7O73/jQtHrzGya1MwAmhZfHOTJ7SgYtnNvKGScey7kVm6nTQnZ
+REd3OSDZP7rPfEtIXjZY80EY3BrjDDRmHvNz9pxNUU3megBipajKy6Cgk8E6eFNpP4vfbColXtiR
+qvFfP2j1OGpDVpjbagQONHU37MXyW2flsAnCe1Qx1AkT6SlTDsbw+RmSn0MXFOGip91qVVT3cn8N
+moTFgKDPlDTW6k/DE1x6Wt91G3Ty3xsWCnRC8hMJGngSfm6OguDqehkfIx2SRzTnlxo5y+G6Ekew
+g8ZQJfXI8lEBYSBWxasURUlhqed7GQ6NkHyZn4Ddfinpy0o=</X509Certificate>
+            </X509Data>
+         </KeyInfo>
+      </Signature>
+   </NFe>
+   <protNFe versao="3.10">
+      <infProt Id="NFe129160000155615">
+         <tpAmb>1</tpAmb>
+         <verAplic>5.0</verAplic>
+         <chNFe>29160102288814000107550010000022451000130875</chNFe>
+         <dhRecbto>2016-01-04T07:39:48-03:00</dhRecbto>
+         <nProt>129160000155615</nProt>
+         <digVal>ZVtyXoJAUno3965YM9XeF3v8kjQ=</digVal>
+         <cStat>100</cStat>
+         <xMotivo>Autorizado o uso da NF-e</xMotivo>
+      </infProt>
+   </protNFe>
+</nfeProc>
+COPY TO CLIPBOARD	 SELECT ALL 
+© FreeFormatter.com - Brought to you by MrForms. NEQ: 2269075125
+

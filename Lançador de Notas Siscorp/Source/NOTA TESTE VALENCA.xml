@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+   <infNFe Id="NFe29160113600911000100550010000111321469259411" versao="3.10">
+      <ide>
+         <cUF>29</cUF>
+         <cNF>46925941</cNF>
+         <natOp>Vendas</natOp>
+         <indPag>1</indPag>
+         <mod>55</mod>
+         <serie>1</serie>
+         <nNF>TESTE</nNF>
+         <dhEmi>2016-01-01T13:24:00-03:00</dhEmi>
+         <dhSaiEnt>2016-01-01T13:24:00-03:00</dhSaiEnt>
+         <tpNF>1</tpNF>
+         <idDest>1</idDest>
+         <cMunFG>2932903</cMunFG>
+         <tpImp>1</tpImp>
+         <tpEmis>1</tpEmis>
+         <cDV>1</cDV>
+         <tpAmb>1</tpAmb>
+         <finNFe>1</finNFe>
+         <indFinal>0</indFinal>
+         <indPres>9</indPres>
+         <procEmi>0</procEmi>
+         <verProc>PrjEstoque 3.00.018</verProc>
+      </ide>
+      <emit>
+         <CNPJ>13600911000100</CNPJ>
+         <xNome>VALENCA DA BAHIA MARICULTURA S/A</xNome>
+         <xFant>MARICULTURA</xFant>
+         <enderEmit>
+            <xLgr>EST VALENCA-GUAIBIM KM 12,5</xLgr>
+            <nro>S/N</nro>
+            <xBairro>GUAIBIM</xBairro>
+            <cMun>2932903</cMun>
+            <xMun>VALENCA</xMun>
+            <UF>BA</UF>
+            <CEP>45400000</CEP>
+            <cPais>1058</cPais>
+            <xPais>Brasil</xPais>
+            <fone>7536413216</fone>
+         </enderEmit>
+         <IE>24663559</IE>
+         <CRT>3</CRT>
+      </emit>
+      <dest>
+         <CNPJ>13600911000100</CNPJ>
+         <xNome>VALENCA DA BAHIA MARICULTURA S/A</xNome>
+         <enderDest>
+	    <xLgr>EST VALENCA-GUAIBIM KM 12,5</xLgr>
+            <nro>S/N</nro>
+            <xBairro>GUAIBIM</xBairro>
+            <cMun>2932903</cMun>
+            <xMun>VALENCA</xMun>
+            <UF>BA</UF>
+            <CEP>45400000</CEP>
+            <cPais>1058</cPais>
+            <xPais>Brasil</xPais>
+            <fone>7536413216</fone>
+         </enderDest>
+         <indIEDest>1</indIEDest>
+         <IE>057646921</IE>
+      </dest>
+      <autXML>
+         <CNPJ>13937073000156</CNPJ>
+      </autXML>
+      <det nItem="1">
+         <prod>
+            <cProd>14045</cProd>
+            <cEAN />
+            <xProd>CAM.VIV.DESC.CONG.41/50 PED</xProd>
+            <NCM>03061790</NCM>
+            <CFOP>5101</CFOP>
+            <uCom>KG</uCom>
+            <qCom>60.0000</qCom>
+            <vUnCom>46.8000</vUnCom>
+            <vProd>2808.00</vProd>
+            <cEANTrib />
+            <uTrib>KG</uTrib>
+            <qTrib>60.0000</qTrib>
+            <vUnTrib>46.8000</vUnTrib>
+            <indTot>1</indTot>
+         </prod>
+         <imposto>
+            <ICMS>
+               <ICMS00>
+                  <orig>0</orig>
+                  <CST>00</CST>
+                  <modBC>3</modBC>
+                  <vBC>2808.00</vBC>
+                  <pICMS>17</pICMS>
+                  <vICMS>477.36</vICMS>
+               </ICMS00>
+            </ICMS>
+            <IPI>
+               <cEnq>999</cEnq>
+               <IPINT>
+                  <CST>51</CST>
+               </IPINT>
+            </IPI>
+            <PIS>
+               <PISAliq>
+                  <CST>01</CST>
+                  <vBC>2808.00</vBC>
+                  <pPIS>1.65</pPIS>
+                  <vPIS>46.33</vPIS>
+               </PISAliq>
+            </PIS>
+            <COFINS>
+               <COFINSAliq>
+                  <CST>01</CST>
+                  <vBC>2808.00</vBC>
+                  <pCOFINS>7.60</pCOFINS>
+                  <vCOFINS>213.41</vCOFINS>
+               </COFINSAliq>
+            </COFINS>
+         </imposto>
+      </det>
+      <det nItem="2">
+         <prod>
+            <cProd>14067</cProd>
+            <cEAN />
+            <xProd>CAM.VIV.DESC.CONG.61/70 PED</xProd>
+            <NCM>03061790</NCM>
+            <CFOP>5101</CFOP>
+            <uCom>KG</uCom>
+            <qCom>60.0000</qCom>
+            <vUnCom>39.0000</vUnCom>
+            <vProd>2340.00</vProd>
+            <cEANTrib />
+            <uTrib>KG</uTrib>
+            <qTrib>60.0000</qTrib>
+            <vUnTrib>39.0000</vUnTrib>
+            <indTot>1</indTot>
+         </prod>
+         <imposto>
+            <ICMS>
+               <ICMS00>
+                  <orig>0</orig>
+                  <CST>00</CST>
+                  <modBC>3</modBC>
+                  <vBC>2340.00</vBC>
+                  <pICMS>17</pICMS>
+                  <vICMS>397.80</vICMS>
+               </ICMS00>
+            </ICMS>
+            <IPI>
+               <cEnq>999</cEnq>
+               <IPINT>
+                  <CST>51</CST>
+               </IPINT>
+            </IPI>
+            <PIS>
+               <PISAliq>
+                  <CST>01</CST>
+                  <vBC>2340.00</vBC>
+                  <pPIS>1.65</pPIS>
+                  <vPIS>38.61</vPIS>
+               </PISAliq>
+            </PIS>
+            <COFINS>
+               <COFINSAliq>
+                  <CST>01</CST>
+                  <vBC>2340.00</vBC>
+                  <pCOFINS>7.60</pCOFINS>
+                  <vCOFINS>177.84</vCOFINS>
+               </COFINSAliq>
+            </COFINS>
+         </imposto>
+      </det>
+      <total>
+         <ICMSTot>
+            <vBC>5148.00</vBC>
+            <vICMS>875.16</vICMS>
+            <vICMSDeson>0.00</vICMSDeson>
+            <vBCST>0.00</vBCST>
+            <vST>0.00</vST>
+            <vProd>5148.00</vProd>
+            <vFrete>0.00</vFrete>
+            <vSeg>0.00</vSeg>
+            <vDesc>0.00</vDesc>
+            <vII>0.00</vII>
+            <vIPI>0.00</vIPI>
+            <vPIS>84.94</vPIS>
+            <vCOFINS>391.25</vCOFINS>
+            <vOutro>0.00</vOutro>
+            <vNF>5148.00</vNF>
+         </ICMSTot>
+      </total>
+      <transp>
+         <modFrete>0</modFrete>
+         <transporta>
+            <xNome>TRANSPORTE PROPRIO</xNome>
+            <xMun>VALENCA</xMun>
+            <UF>BA</UF>
+         </transporta>
+         <vol>
+            <qVol>6</qVol>
+            <esp>M.BOX</esp>
+            <pesoL>120.000</pesoL>
+            <pesoB>126.000</pesoB>
+         </vol>
+      </transp>
+      <cobr>
+         <dup>
+            <nDup>01113201</nDup>
+            <dVenc>2016-01-26</dVenc>
+            <vDup>1716.00</vDup>
+         </dup>
+         <dup>
+            <nDup>01113202</nDup>
+            <dVenc>2016-02-02</dVenc>
+            <vDup>1716.00</vDup>
+         </dup>
+         <dup>
+            <nDup>01113203</nDup>
+            <dVenc>2016-02-09</dVenc>
+            <vDup>1716.00</vDup>
+         </dup>
+      </cobr>
+      <infAdic>
+         <infCpl>PEDIDO 0043/16</infCpl>
+      </infAdic>
+   </infNFe>
+   <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+         <Reference URI="#NFe29160113600911000100550010000111321469259411">
+            <Transforms>
+               <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+               <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>tiWrhvMoUJYClDWsQCK6Rd2Ndiw=</DigestValue>
+         </Reference>
+      </SignedInfo>
+      <SignatureValue>x/yXPplWUUxNqvL8cEYo1Yvn/ocK/Jh1wsS87ujuaIlwK9wztC6iVmHQZAP569XugjvLn8hkzTY2IOrdOiQVSCpysTiM2GZax3q+k73uQwyLHsHQuLVHnrb+P+sToR9/0nWCLHD4ccmFFWxHM/tkO4niXHQEGw5B5r6jN2GWA9t/FtX9DtWoXVEktug/TnZ/DX8776Mk+te9xWQm1cg7pKrLJFtTkREtHXFl0B+Y+Gy2oItfvHl1pHe/K2zCz9c2imWzFj/j9soiTDmQDjZQqQLMyUnv9kTmddBQxIcN1BOSkKN6fTTFATyf/R6vJ6a99jBIZ1AbxZLUtS2r2VvFsA==</SignatureValue>
+      <KeyInfo>
+         <X509Data>
+            <X509Certificate>MIIIZjCCBk6gAwIBAgIQdUfYuVjM73MSfQDRoUIHpjANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTQwMTAyMDAwMDAwWhcNMTYxMjMxMjM1OTU5WjCB5TELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTMxFTATBgNVBAsUDElEIC0gNTYyNDM5OTEpMCcGA1UEAxMgVkFMRU5DQSBEQSBCQUhJQSBNQVJJQ1VMVFVSQSBTIEExKDAmBgkqhkiG9w0BCQEWGXZlbmRhc3ZibUBncnVwb21wZS5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDwyEOESvo0zFMlL+P6A+clAv8g+ajQB51gT8usNJOThnxU1dxZ+KND/CyppbifIFjejg/rNU8xGYiL5NPUapEguhslF8WCmneb0lYqHbNI+6T/uCFi3KTA5rXXWUkFdlFc62V0ueUwv6E+hs6hz1k7vLxeTp0MG1tMYw2m2OKwsktfQLlayiilhR61vt/IucfR5g5IWiw/jnuNXD006WAxRZi2bw4XHPz6dOErE6kOd1gmHj4znQAfUkFTRwyNgu4by1e59FdSRF3jhuMaNJCCToici2my3MCLcz0cDdPcGeLe5//BQyPdx1BdlqgnAM7+JEQrJuQDnDwYTRGgFqoFAgMBAAGjggOAMIIDfDCBxgYDVR0RBIG+MIG7oD0GBWBMAQMEoDQEMjE5MDExOTU4NDEwNTQyODg3MDQwMDAwMDAwMDAwMDAwMDAwMDA1MjM2NzgxMGlmcFJKoCsGBWBMAQMCoCIEIEFkaWxzb24gRWxlb25pc2lvIGRhIFNpbHZhIExvcGVzoBkGBWBMAQMDoBAEDjEzNjAwOTExMDAwMTAwoBcGBWBMAQMHoA4EDDAwMDAwMDAwMDAwMIEZdmVuZGFzdmJtQGdydXBvbXBlLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgMFMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBAASQNNBuRw5Uu0ErzXKYFsTlBkcu6JgcT6+0XbGiOHUKmOLNgsFlWWyK3M1QM/rX2OC9JR8PIY6pC/qRHwVivLwGZUx23qHHvB4QkMZTk/cpSRsM7OXWbTV6IcaVQZuDlXgr0jr7h8Eq+mkqSiDCoO+ll/O1oQ605o9qe7PgqkwndFESAleoGQEH33Keth0VNGtvHOae5lAFB9GLWxfgyGx3Y9X/YdS45UXB6r8zsecr2oKmOyz8n/F/ZZQVOcJOC3wC3sFaYWpcByJ5nBVg9JlLl1BpK0yhquuIoEIlhaiBMDmewxaecCKNskBdaJXP+P5k5NGW7Sb3H0/d2LPrUAokfD7dheon5EfflHDoEqv5YDCScEzLR0l3AaTJlr5kAgfjTssQyL9DwAV0vOOdCib7Nq6FvvOoPfvPWx3KlABuFxc4i9VghHoleECpwWoJ5A+T6rtQVL9G59zV32Vg4rxqz4+Oi57pUKsOccGjMV6gfIIxyIvIjGlk68cSLZv77+xTPrEmFVXXyuOlm1e7g8YKFFTyvo2mGuFvnkNTLeNIvPRLIsZUkppied/DTTzCjjlDtyTi+8Oq/nHOK+KOQ2D/9k2aqn2qdNm1qWgRonRSyVtmtKRBq8Ru3Z96QOe8/oc+zCm0AJAGKvIXLI1sZz3vOCq6UYnaq8eZAfvuISvI</X509Certificate>
+         </X509Data>
+      </KeyInfo>
+   </Signature>
+</NFe>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>vBob - Now Listening</title>
+</head>
+<body onload="carregarMusica()"></body>
+</html>
+<title></title>
+<header></header>
+
+<style type="text/css">
+	
+	html {
+		color: #E8EDDF;
+		background-color: #242423;
+	}
+
+	#tableBody {
+		margin-top: 7vh;
+		text-align: left;
+		font-size: 5vh;
+		width: 90vw;
+	}
+
+	#tableBody td {
+		text-align: justify; 
+		text-justify: inter-word;
+		height:76vh; 
+		width:auto;
+	}
+
+	#tableInfo tr {
+		padding:5vw;
+	}
+
+	#cover { 
+		height:110%; width:auto; 
+	}
+	
+</style>
+
+<script type="text/javascript">
+	var user = "vbobarth";
+	var apikey = "8f6d13716ec937db815971d11431d2dd";
+	var nome = " ";
+
+	function carregarMusica() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (xhttp.readyState == 4 && xhttp.status == 200) {
+				var data = xhttp.responseText;
+				var jsonArray = JSON.parse(data);
+				document.getElementById("cover").src = "null";
+				document.getElementById("artist").innerHTML = jsonArray.recenttracks.track[0].artist['#text'].italics();
+				document.getElementById("music").innerHTML = jsonArray.recenttracks.track[0].name.replace(/ *\-[^)]*/g, "").bold();
+				document.getElementById("album").innerHTML = jsonArray.recenttracks.track[0].album["#text"].replace(/ *\([^)]*\) */g, "").replace(/ *\[[^)]*\] */g, "").replace(/ *\:[^)]*/g, "").replace(/ *\-[^)]*/g, "");
+				document.getElementById("cover").src = (jsonArray.recenttracks.track[0].image[3]["#text"]).replace("/300x300/","/500x500/");
+				nome = jsonArray.recenttracks.track[0].name;
+			}
+		};
+		var input = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + user + "&api_key=" + apikey+ "&limit=1&format=json";
+		xhttp.open("GET", input, true);
+		xhttp.send();
+	}
+
+	function verificarNome() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (xhttp.readyState == 4 && xhttp.status == 200) {
+				var data = xhttp.responseText;
+				var jsonArray = JSON.parse(data);
+				document.getElementById("music").innerHTML = jsonArray.recenttracks.track[0].name.replace(/ *\-[^)]*/g, "").bold();
+				document.getElementById("artist").innerHTML = jsonArray.recenttracks.track[0].artist['#text'].italics();
+				document.getElementById("album").innerHTML = jsonArray.recenttracks.track[0].album["#text"].replace(/ *\([^)]*\) */g, "").replace(/ *\[[^)]*\] */g, "").replace(/ *\:[^)]*/g, "").replace(/ *\-[^)]*/g, "");
+				if (jsonArray.recenttracks.track[0].name != nome) {
+					document.getElementById("cover").src = "null";
+					carregarMusica();
+				}
+			}
+		};
+		var input = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + user + "&api_key=" + apikey+ "&limit=1&format=json";
+		xhttp.open("GET", input, true);
+		xhttp.send();
+	}
+
+	setInterval(function() {
+	 	verificarNome();
+	}, 300);
+	</script>
+<center>
+<table border="0" id="tableBody">
+	<tbody>
+		<tr>
+			<td id="colCover" style="width:1px;white-space:nowrap;vertical-align:top;"><img id="cover" src="" /></td>
+			<td id="cover" style="vertical-align:top;padding-left:3vw;padding-top:3vh;">
+			<div id="music"></div>
+
+			<div style="margin-top:5.5vh;margin-bottom:1.2vh;font-size:4vh;"id="artist"></div>
+
+			<div style="font-size:3.5vh;" id="album"></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>

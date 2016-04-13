@@ -1,0 +1,27 @@
+html {
+	color: #E8EDDF;
+	background-color: #242423;
+}
+
+#tableBody {
+	margin-top: 7vh;
+	text-align: left;
+	font-size: 5vh;
+	width: 90vw;
+}
+
+#tableBody td {
+	text-align: justify; 
+	text-justify: inter-word;
+	height:76vh; 
+	width:auto;
+}
+
+#tableInfo tr {
+	padding:5vw;
+}
+
+#cover { 
+	height:110%; 
+	width:auto; 
+}

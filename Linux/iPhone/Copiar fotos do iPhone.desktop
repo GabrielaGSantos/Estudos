@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Copiar fotos do iPhone
+Comment=
+Exec=/usr/bin/iphone-bob/iPhone.sh
+Icon=gnome-session-switch
+Path=
+Terminal=true
+StartupNotify=false
