@@ -14,8 +14,10 @@
 \usepackage{xcolor}
 \usepackage{lipsum}
 \usepackage{setspace}
-\renewcommand{\baselinestretch}{1.0} 
 \newcommand\tab[1][1.835cm]{\hspace*{#1}}
+\newcommand\taba[1][2.55cm]{\hspace*{#1}}
+\newcommand\tabb[1][2.2cm]{\hspace*{#1}}
+\newcommand\tabc[1][3cm]{\hspace*{#1}}
 \author{Luis Alexandre Ferreira Bueno, Luiz Filipe de Jesus, Nicolas Timoteu Cuerbas e Vitor Bruno de Oliveira Barth}
 \title{Trabalho de Álgebra Linear }
 
@@ -25,7 +27,7 @@
 
 % Título
 \begin{center}
-\textbf{Trabalho Final de Álgebra Linear}
+\textbf{Trabalho de Álgebra Linear}
 \end{center}
 
 % Cabeçalho
@@ -40,33 +42,46 @@
 \tab Vitor Bruno de Oliveira Barth\linebreak
 	
 %Conteudo	
-\textbf{Conteúdos:} Autovalor, Autovetor, Operador Linear, Polinômio Característico e Transformação Linear\linebreak
+\textbf{Conteúdos:} Matrizes canônicas, transformações lineares, operadores lineares, autovalores, autovetores e polinômios característicos \linebreak
 
 %
 % DOCUMENTO
 %
 
-\textbf{(a) Matrizes canônicas e transformações lineares}\linebreak
-\linebreak
-\textbf{(a).1 - Condição de Existência:}\linebreak
-Julgando que $T: {\mathbb{R}}^n\rightarrow{\mathbb{R}^m} $ e $\vv{a}, \vv{b} \in {\mathbb{R}}$. Transformação Linear existirá se e somente se: \linebreak
-\tab I) $T(\vv{a} + \vv{b}) = T(\vv{a}) + T(\vv{b})$\linebreak
-\tab II) $T(c\vv{a}) = cT(\vv{a})$ \linebreak 
+\textbf{1. Matrizes canônicas e transformações lineares}\linebreak
+\\
+\textbf{2. Operadores lineares}\linebreak
+\\
+\textbf{3. Autovalores e autovetores}\linebreak
+\\
+\textbf{4. Polinômios característicos}\linebreak
+\tab \linebreak 
+\textbf{5. Exercícios}\linebreak
+\tab 1) Verifique se as seguintes afirmações são verdadeiras ou falsas \linebreak
+\taba (a) Qualquer operador linear em $V$ é tal que $V = Ker(T) \oplus Im(T)$ \linebreak
+\taba (b) Se $T:P_2\rightarrow\mathbb{R}^2$ uma transformação linear definida por $T:(at^2+bt+c) = (a-b$ $+c,  2a +b-c)$, então $\vv{p}(t)=5t+5 \in Ker(T)$ \linebreak
+\taba (c) Se $Ker(T)$ é gerado por três vetores $\vv{v_1}, \vv{v_2}, \vv{v_3}$, então a imagem de qualquer operador linear $T:\mathbb{R}^5\rightarrow\mathbb{R}^5$ tem dimensão 2\linebreak
+\taba (d) A aplicação linear $T:M(2,2)\rightarrow\mathbb{R}$ definida por $T\begin{pmatrix}\begin{bmatrix} a & b \\c & d\end{bmatrix}\end{pmatrix} = $ $2a+c-d$ é uma transformação linear\linebreak
+\taba (e) Existem transformações lineares $T:P_1 \rightarrow P_3$ sobrejetoras\linebreak
+\\
+\tab 2) Seja a transformação linear $T:\mathbb{R}^3 \rightarrow \mathbb{R}^2$ definida por $T(x,y,z) = (x-y+2z,4x+ $ $3y-z)$ determine: \linebreak
+\taba(a) A matriz canônica de $T$ \linebreak
+\taba(b) O núcleo de $T$, uma base e a dimensão \linebreak
+\taba(c) A imagem de $T$, uma base e a dimensão \linebreak
+\\
+\tab 3) Determine a transformação linear que leva os vetores $\vv{c_1}, \vv{c_2}, \vv{c_3}$ nos vetores $\vv{w_1}=$ $(1,0,0)$, $\vv{w_2}=(3,1,0)$ e $\vv{w_3}=(1,2,4)$ respectivamente. e responda se esta transformação linear é um isomorfismo\linebreak
+\\
+\tab 4) Dada a matriz canônica $[T]= \begin{bmatrix}
+1 & 0 & 0\\ 2 & 1 & 0\\ 3 & -2 & -1 \end{bmatrix}$ de um operador linear em $\mathbb{R}^3$, verifique se $T$ é um isomorfismo e justifique se $\vv{w}=(2,-1,0) \in Im(T)$ e se $\vv{u}= $ $(0,3,4) \in Ker(T)$?\linebreak
 
-\textbf{(b) Definição de operadores lineares e exemplos}\linebreak
 
-\textbf{(c) Definição de autovalor, autovetor e exemplos, como calcular}\linebreak
-\\
-\textbf{(d) Polinômimios característicos, definição e como calcular}\linebreak
-\\
-\textbf{(e) Exercícios}\linebreak
-\\
 
 %
 % BIBLIOGRAFIA
 %
-
-\textbf{Bibliografia: }BOLDRINI, Jose Luís. \textit{Álgebra Linear}. 3ª Edição.
+\textbf{Bibliografia: }BOLDRINI, Jose Luís. \textit{Álgebra Linear}. 3ª Edição. \linebreak
+\taba COELHO, Flávio Uhoa. \textit{Um Curso de Álgebra Linear}. 2ª Edição.
+\taba WIKIBOOKS. \textit{Álgebra Linear}. Edição de 24/01/2014. \linebreak
 \end{flushleft}
 
 \end{document}
