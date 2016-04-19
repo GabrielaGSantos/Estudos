@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.18)  19 APR 2016 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.18)  19 APR 2016 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,7 +667,7 @@ File: uesvect.fd
 Here is how much of TeX's memory you used:
  5096 strings out of 493054
  67284 string characters out of 6140586
- 265585 words of memory out of 5000000
+ 273585 words of memory out of 5000000
  8491 multiletter control sequences out of 15000+600000
  30460 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -684,7 +684,7 @@ public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr
 /type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
 
-Output written on "Trabalho de Álgebra Linear.pdf" (4 pages, 147038 bytes).
+Output written on "Trabalho de Álgebra Linear.pdf" (4 pages, 148990 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
