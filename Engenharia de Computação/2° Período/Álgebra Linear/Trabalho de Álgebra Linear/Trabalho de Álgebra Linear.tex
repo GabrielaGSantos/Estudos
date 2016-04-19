@@ -67,17 +67,139 @@
 \tab Já o núcleo de uma Transformação (denotado por $Ker(T)$) é dado por $Ker(T) = \{ \vv{v} \in V $ $ | T(\vv{v}) = 0\}$. Se a transformação é injetora, o núcleo é trivial, afinal $T(0)$ deve obrigatóriamente pertencer à $Im(T)$. Porém caso ela não seja injetora, o núcleo poderá ser um conjunto vetorial. Sendo assim, obrigatoriamente, $Ker(T)$ é um subespaço vetorial de $V$ \linebreak
 \\
 \tab \textbf{V) Exemplos:} \linebreak
-\taba \linebreak 
+\taba 1) $T: \mathbb{R}^3 \rightarrow \mathbb{R}^2$ tal que $T(x,y,z) = (2x-y+z, 3x+y-2z)$ \linebreak
+\taba $Im(T) =$ $ ? \rightarrow T(x,y,z) = (2x-y+z, 3x+y-2z) = (2x,3x) + (-y,y) + (z-2z)$ \linebreak
+\taba $Im(T) = x(2,3) + y(-1,1) + z(1,-2) \rightarrow Im(T) = [(2,3) + (-1,1) + (1,-2)]$ \linebreak
+\newline
+\taba $Ker(T) = $ $? \rightarrow Ker(T) = {(x,y,z)|(2x-y+z,3x+y-2z) = (0,0)}$ \linebreak
+\taba $\begin{cases}
+    2x-y+z=0\\
+    3x+y-2=0
+  \end{cases} \implies 5x-z = 0 \implies 5x = z$
+  \newline
+  \newline \taba \hspace{3.15cm} $\implies 2x-y+z =0 \implies 2x-y+5x =0 \implies 7x = y$
+  \newline
+  \newline \taba $Ker(T) = \{(x,7x,5x) | x \in \mathbb{R}\}$
 \\
 \textbf{2. Operadores lineares}\linebreak
+\\
+\tab É chamado de Operador Linear a Transformação Linear $T$ tal que $T: V \rightarrow V$, ou seja, aquela na qual o domínio e o contradomínio pertencem ao mesmo espaço vetorial.\linebreak
+\tab A condição de existência de um Operador Linear é a mesma que as outras transformações, ou seja, deve obedecer as regras de soma e de multiplicação por escalar dada em 1.c.i) e 1.c.ii), porém $V$ necessita ser um espaço vetorial finito. Como o espaço vetorial do dominio é o mesmo do contradomínio, a base de ambos é a mesma.\linebreak
+\tab Sendo $X = \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}$ as coordenadas do espaço vetorial $V$, e $A$ uma matriz de dimensão $n*n$, um operador linear pode ser expresso na forma $T = A*X$, sendo esta a grande diferença entre ele e as outras transformações lineares. \linebreak
+\tab Seja $A = \begin{bmatrix} a_{11} \ a_{12} \ ... \ a_{1n} \\ a_{21} \ a_{22} \ ... \ a_{2n} \\ \vdots \\ a_{n1} \ a_{n2} \ ... \ a_{nn} \end{bmatrix}$. Ao calcularmos $A*X$, perceberemos que $ T(\vv{v_j})$ | $ 1 \leq j \leq n  $ é dada por $ \displaystyle\sum_{i=1}^n a_{ij}\vv{v_i} $, assim como $T(\vv{v}) = \displaystyle\sum_{j=1}^n c_jT(\vv{v_j}) $. Portanto $T(\vv{v}) = \displaystyle\sum_{j=1}^n \displaystyle\sum_{i=1}^n c_j(a_{ij}\vv{v_i})$ \linebreak 
 \\
 \textbf{3. Autovalores e autovetores}\linebreak
 \\
 \textbf{4. Polinômios característicos}\linebreak
-\tab \linebreak 
+\tab 
+O Polinômio Caracteristico é um metodo pratico para se encontrar autovalores e autovetores de uma matriz  de ordem \textbf{N}\newline
+\textbf{Exemplo}:\newline\newline
+A= $
+ \begin{pmatrix}
+  4 & -2 &  0\\
+  -1& 1 & 0 \\
+  0& 1 & 2
+ \end{pmatrix}
+$\vspace*{3mm}\newline
+Procuramos um vetor $\mathnormal{v}\in\mathnormal{R^3}$  e escalares $\lambda\in\mathnormal{R}$ Tal que $\mathnormal{A}. \mathnormal {v}= \lambda\mathnormal{v}$. Observe se  $\mathnormal {I}$ for a matriz identidade de mesma ordem a equação pode ser escrita $(\mathnormal {A}-\lambda\mathnormal {I})\mathnormal {v}=0$ \vspace*{3mm}\newline
+$\begin{bmatrix*} 4 -\lambda& -2 &  0\\  -1& 1-\lambda & 0 \\  0& 1 & 2-\lambda \end{bmatrix*} \begin{bmatrix}
+x\\y\\z\\
+\end{bmatrix}=0 $\vspace*{3mm}\newline
+Para se calcular os autovetores de  A, isto é, vetores v$\neq$ 0, tais que $(\mathnormal {A}-\lambda\mathnormal {I})\mathnormal {v}=0$. Neste caso calculamos a $det(\mathnormal {A}-\lambda\mathnormal {I})=0$\vspace*{3mm}\newline
+$\begin{bmatrix*} 4 -\lambda& -2 &  0\\  -1& 1-\lambda & 0 \\  0& 1 & 2-\lambda \end{bmatrix*}=0$\vspace*{3mm}\newline
+Portanto:\vspace*{3mm}\newline
+$-\lambda^2+7\lambda-16\lambda+12=0$\newline
+$(\lambda-2)^2(\lambda-3)=0$\vspace*{3mm}\newline
+Logo $\lambda=2$ e $\lambda=3$são as raizes do polinomio caracteristico de $\mathnormal{A}$, e portanto os autovalores da matriz $\mathnormal{A}$ são 2 e 3. Conhecendo os autovalores podemos encontrar os autovetores correspondentes. Resolvendo a equação: $\mathnormal{A}\mathnormal{v}=\lambda\mathnormal{v}$\vspace*{3mm}\newline
+$\lambda=2$\newline
+$\begin{bmatrix*} 4& -2 &  0\\  -1& 1 & 0 \\  0& 1 & 2 \end{bmatrix*} \begin{bmatrix}
+x\\y\\z\\
+\end{bmatrix}=2\begin{bmatrix}
+x\\y\\z
+\end{bmatrix} \implies  \begin{cases}
+    4x+2y\hspace{1cm}=2x\\
+    -x+1y\hspace{1cm}=2y\\
+    \hspace{1.2cm}y-2z=2z
+  \end{cases}\implies  \begin{cases}
+    x\hspace{1cm}=y\\
+    -x\hspace{0.7cm}=y\\
+    \hspace{0.5cm}y \hspace{0.5cm}=0
+  \end{cases}$\vspace*{3mm}\newline
+  Implicando em: $y=0$, x=0 e como nenhuma equação impõe restrição em z, os autovetores associados a $\lambda=2$ são do tipo $\mathnormal{v}(0,0,z)$ pertendo ao subespaço[(0,0,1)]. \vspace*{3mm}\newline
+ $\lambda=3$\newline
+ $\begin{bmatrix*} 4& -2 &  0\\  -1& 1 & 0 \\  0& 1 & 2 \end{bmatrix*} \begin{bmatrix}
+x\\y\\z\\
+\end{bmatrix}=3\begin{bmatrix}
+x\\y\\z
+\end{bmatrix} \implies  \begin{cases}
+    4x+2y\hspace{1cm}=3x\\
+    -x+1y\hspace{1cm}=3y\\
+    \hspace{1.2cm}y-2z=3z
+  \end{cases}\implies  \begin{cases}
+    x\hspace{1cm}=-2y\\
+    x\hspace{1cm}=-2y\\
+    \hspace{0.5cm}y\hspace{0.5cm}=z
+  \end{cases}$\vspace*{3mm}\newline
+  Implicando em:y=z,x=2y. Os autovetores associados a $\lambda=3$ são do tipo (-2y, y, y) pertencendo ao  subespaço[(-2,1,1)].\newline
+  Generalizando:\vspace*{3mm}\newline
+  $ \begin{bmatrix}
+a_{ 1,1}-\lambda & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2}-\lambda & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{n,1} & a_{n,2} & \cdots &a_{n,n}-\lambda 
+ \end{bmatrix}\begin{bmatrix}
+x1\\x2\\\vdots\\x3
+\end{bmatrix}=\begin{bmatrix}
+0\\0\\\vdots\\0
+\end{bmatrix}$\vspace*{3mm}\newline
+Chamemos essa matriz de $\mathnormal{B}$. $\mathnormal{B}.\mathnormal{v}=0$. Se a determinante for diferente de zero, temos que o posto da matriz é n.	E o sistema linear indica que existe apenas uma única solução: x1=x2=...=xn=0 sempre é solução do sistema homogênio, solução nula. Assim a única solução para encontrar autovetores v é:\vspace*{3mm}\newline
+$det(A-\lambda\mathnormal{I})=0$\newline
+$P(\lambda)=det(A-\lambda\mathnormal{I})= \begin{bmatrix}
+a_{ 1,1}-\lambda & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2}-\lambda & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{n,1} & a_{n,2} & \cdots &a_{n,n}-\lambda 
+ \end{bmatrix}$\vspace*{3mm}\newline
+ $P(\lambda)=(a_{1,1}-\lambda)\cdots(a_(n,n)-\lambda)$+ termos de grau $<$ n, e os autovalores são as raizes deste polinômio. P($\lambda$) conhecido como polinômio característico da matriz.\newline
+Ex: 1) $
+ \begin{bmatrix}
+1 & 2\\
+0 & -1
+\end{bmatrix}
+ $\newline
+  $det(A-\lambda\mathnormal{I})=
+ \begin{bmatrix}
+1 -\lambda& 2\\
+0 & -1-\lambda
+\end{bmatrix}\newline
+=(1-\lambda)(-1-\lambda)-0\newline
+=(\lambda-1)(\lambda+1) =P(\lambda)\newline
+P(\lambda)=0\implies\lambda=1\hspace{1mm} e\hspace{1mm} \lambda=-1\newline
+ $\newline
+ $\lambda=1$\newline
+ $\begin{cases}
+    x+2y=x\\
+   \hspace{6mm}-y=y
+  \end{cases}\newline
+  Implica: y=0 \hspace{1mm}e\hspace{1mm}x=x\newline
+  \mathnormal{v}=(x,0)\vspace{3mm}\newline
+ $
+ $\lambda=-1$\newline
+ $
+ \begin{cases}
+    x+2y=-x\\
+   \hspace{6mm}-y=-y
+  \end{cases}\newline
+  implica: y=y $ e $x=-y \newline
+    \mathnormal{v}=(-y,y)\vspace{3mm}\newline
+ $ \linebreak 
 \textbf{5. Exercícios}\linebreak
-\tab 1) Verifique se as seguintes afirmações são verdadeiras ou falsas \linebreak
-\taba (a) Qualquer operador linear em $V$ é tal que $V = Ker(T) \oplus Im(T)$ \linebreak
+\tab \textbf{1) Verifique se as seguintes afirmações são verdadeiras ou falsas} \linebreak
+\taba \textbf{(a) Qualquer operador linear em $V$ é tal que $V = Ker(T) \oplus Im(T)$} \linebreak
+\taba Peguemos $x \in V$. Sendo $T = T^2$, temos $Tx = T^2x$ e logo $T(x-Tx) = 0$ \linebreak
+\taba Sendo $x-Tx = \xi$ para alguns $\xi \in Ker(T)$, isso mostra que $V = Im(T) + Ker(P)$.
+\taba Agora pegue $y \in Im(T) \bigcap Ker(T)$. Visto que $y \in Im(T)$ temos que $y = Tz$ para alguns $z \in V$. Aplicando $T$ em ambos os lados nós obtemos $Ty = T^2z$. Só que $y \in Ker(T)$,  logo $0 = Ty = T^2z = Tz = y$. Isso mostra que $Im(T) \bigcap Ker(T) = 0 $ e logo temos que $V = Im(T) \oplus Ker(T)$. \linebreak
+\\
 \taba (b) Se $T:P_2\rightarrow\mathbb{R}^2$ uma transformação linear definida por $T:(at^2+bt+c) = (a-b$ $+c,  2a +b-c)$, então $\vv{p}(t)=5t+5 \in Ker(T)$ \linebreak
 \taba (c) Se $Ker(T)$ é gerado por três vetores $\vv{v_1}, \vv{v_2}, \vv{v_3}$, então a imagem de qualquer operador linear $T:\mathbb{R}^5\rightarrow\mathbb{R}^5$ tem dimensão 2\linebreak
 \taba (d) A aplicação linear $T:M(2,2)\rightarrow\mathbb{R}$ definida por $T\begin{pmatrix}\begin{bmatrix} a & b \\c & d\end{bmatrix}\end{pmatrix} = $ $2a+c-d$ é uma transformação linear\linebreak
