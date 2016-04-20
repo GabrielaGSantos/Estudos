@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.18)  20 APR 2016 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.18)  20 APR 2016 13:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -662,12 +662,12 @@ LaTeX Font Info:    Try loading font information for U+esvect on input line 54.
 File: uesvect.fd 
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7]
 (./Trabalho de Álgebra Linear.aux) ) 
 Here is how much of TeX's memory you used:
  5096 strings out of 493054
  67284 string characters out of 6140586
- 262585 words of memory out of 5000000
+ 268585 words of memory out of 5000000
  8491 multiletter control sequences out of 15000+600000
  30460 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -685,10 +685,10 @@ xmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
 mf-dist/fonts/type1/public/esvect/vect10.pfb>
-Output written on "Trabalho de Álgebra Linear.pdf" (6 pages, 162342 bytes).
+Output written on "Trabalho de Álgebra Linear.pdf" (7 pages, 167064 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

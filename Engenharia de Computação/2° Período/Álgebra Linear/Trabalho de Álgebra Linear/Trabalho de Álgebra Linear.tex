@@ -241,22 +241,125 @@ taba Verdadeiro. Pelo teorema do núcleo e da imagem podemos afirmar que dado $T
 \newline \newline
 \tab \textbf{2) Seja a transformação linear $T:\mathbb{R}^3 \rightarrow \mathbb{R}^2$ definida por $T(x,y,z) = (x-y+2z,4x+ $ $3y-z)$ determine: \linebreak
 \taba(a) A matriz canônica de $T$}\linebreak
-\taba(b) O núcleo de $T$, uma base e a dimensão \linebreak
-\taba(c) A imagem de $T$, uma base e a dimensão \linebreak
+\taba T:$R^3\rightarrow R^2$ por t(x,y,z)=(x-y+2z,4x+y-z), A.v=T(v)\linebreak
+\taba$\begin{bmatrix}
+a & b & c\\
+d & e & f
+\end{bmatrix}.
+\begin{bmatrix} 
+x\\y\\z
+\end{bmatrix}=
+\begin{bmatrix}
+ax+by+cz\\
+dx+ey+fz
+\end{bmatrix}\implies\begin{bmatrix}
+a & b & c\\
+d & e & f
+\end{bmatrix}.
+\begin{bmatrix}
+x\\y\\z\\
+\end{bmatrix}=
+\begin{bmatrix}
+x &-y-&2z\\
+4x&+2y&-z
+\end{bmatrix}
+$\linebreak
+\taba$ax=x$ a=1\linebreak
+\taba$by=-y$ b=-1\linebreak
+\taba$cz=2z$ c=2\linebreak
+\taba$dx=4x$ d=4\linebreak
+\taba$ey=2y$ e=2\linebreak
+\taba$fz=-z$ f=-1\linebreak
+\taba Matriz A=$\begin{bmatrix}
+1&-1&2\\
+4&2&-1
+\end{bmatrix}$\linebreak
+\newline \newline
+\taba\textbf{(b) O núcleo de $T$, uma base e a dimensão }\linebreak
+\taba$
+\begin{cases}
+x-y+2z\\
+4x+2y-z
+\end{cases}\implies\begin{cases}
+2x-2y+4z=0\\
++4x+2y-z=0
+\end{cases}\implies6x+3z=0\implies6x=-3z\implies x=z/2\linebreak
+$
+\taba$
+\begin{cases}
+x-y+2z\implies z/2-y+2z=0 \implies -y=-z/2-2z \implies  y=5z/2
+\end{cases}
+$\linebreak
+\taba Ker(t)={(x,y,z):(x-y+2z,4x+2y-z)=(0,0)}\linebreak
+\taba Ker(t)={(z/2,5z/2,z)z$\mathnormal{R}$}\linebreak
+\taba base de ker(t)=[(1/2,5/2,1)]\linebreak
+\taba dim Ker(t)=1\linebreak \newline \newline
+\taba\textbf{(c) A imagem de $T$, uma base e a dimensão} \linebreak
+\taba Im(t)=(x-y+2z,4x+2y-z)=(x,4x)+(-y,2y)+(2z,-z)=x(1,4)+y(-1,2)+z(2,-1)\linebreak
+\taba Im(t)=[(1,4)+(-1,2)+(2,-1)]\linebreak
+\taba base de Im(t)[(1,4)+(2,-1)]\linebreak
+\taba dim Im(t)=2\linebreak
 \\
-\tab 3) Determine a transformação linear que leva os vetores $\vv{c_1}, \vv{c_2}, \vv{c_3}$ nos vetores $\vv{w_1}=$ $(1,0,0)$, $\vv{w_2}=(3,1,0)$ e $\vv{w_3}=(1,2,4)$ respectivamente. e responda se esta transformação linear é um isomorfismo\linebreak
-\\
-\tab 4) Dada a matriz canônica $[T]= \begin{bmatrix}
-1 & 0 & 0\\ 2 & 1 & 0\\ 3 & -2 & -1 \end{bmatrix}$ de um operador linear em $\mathbb{R}^3$, verifique se $T$ é um isomorfismo e justifique se $\vv{w}=(2,-1,0) \in Im(T)$ e se $\vv{u}= $ $(0,3,4) \in Ker(T)$?\linebreak
+\tab \textbf{3) Determine a transformação linear que leva os vetores $\vv{c_1}, \vv{c_2}, \vv{c_3}$ nos vetores $\vv{w_1}=$ $(1,0,0)$, $\vv{w_2}=(3,1,0)$ e $\vv{w_3}=(1,2,4)$ respectivamente. e responda se esta transformação linear é um isomorfismo} \linebreak
+\taba \textbf{(a)} T(e1)=(1,0,0)\linebreak
+\taba t(e2)=(3,1,0)\linebreak
+\taba t(e3)=(1,2,4)\linebreak
+\linebreak
+\taba T(1,0,0)=(1,0,0)\linebreak
+\taba T(0,1,0)=(3,1,0)\linebreak
+\taba T(0,0,1)=(1,2,4)\linebreak
+\linebreak
+\taba \textbf{(b)} Verificando se é injetora, condição Ker(T)=(0,0,0)\linebreak
+\taba T(x,y,z)=(x+3y+z,y+2z, 4z)=(0,0,0)\linebreak
+\taba $\begin{cases}
+x+3y+z=0\\
+\hspace{6mm}y+2z=0\\
+\hspace{13mm}4z=0
+\end{cases}\implies z=0, y=0, x=0$\linebreak
+\\ \pagebreak
+\tab \textbf{ 4) Dada a matriz canônica $[T]= \begin{bmatrix}
+1 & 0 & 0\\ 2 & 1 & 0\\ 3 & -2 & -1 \end{bmatrix}$ de um operador linear em $\mathbb{R}^3$, verifique se $T$ é um isomorfismo e justifique se $\vv{w}=(2,-1,0) \in Im(T)$ e se $\vv{u}= $ $(0,3,4) \in Ker(T)$? }\linebreak
 
-
-
+\taba $T:R^3\rightarrow R^3$\linebreak
+\taba \textbf{ (a) Para ser isomórfica ela temdi a possuir apenas um T(x,y,z)}
+\taba T(x,y,z)=$\begin{bmatrix}
+x & Y & z
+\end{bmatrix} \begin{bmatrix}
+1&0&0\\
+2&1&0\\
+3&-2&-1
+\end{bmatrix} =\begin{bmatrix}
+x+2y+3z\\
+ \hspace{9mm}y-2z\\
+ \hspace{18mm}z
+\end{bmatrix}
+$\linebreak
+\taba(x,y,z)=(x+2y+3z,y-2z,z)\linebreak
+\taba ker(T)$\implies$(x+23z,y-2z,z)=(0,0,0)\linebreak
+\taba $\begin{cases}
+x+2y+3z=0\\
+\hspace{9mm}y-2z=0\\
+\hspace{18mm}z=0
+\end{cases}\implies$ Logo ela é injetora\linebreak
+\taba Como $T:R^3\rightarrow R^3$ é um op. linear, podemos dizer que ela é isomorfica.\linebreak
+\newline
+\taba \textbf{b) Transformar todos os elementos do plano original}\linebreak
+\taba $\vv{w}$=(0,-1,0) e IM(t)\linebreak
+\taba $\begin{cases}
+x+2y+3z=2\\
+\hspace{9mm}y-2z=-1\\
+\hspace{18mm}z=o
+\end{cases}\implies x=4, y=-1, z=0 \implies
+$Logo $\vv{w}\in$Im(t)\linebreak
+\taba \textbf{$\vv{u}(0,3,4)\in Ker(t)$}\linebreak
+\newline
 %
 % BIBLIOGRAFIA
 %
 \textbf{Bibliografia: }BOLDRINI, Jose Luís. \textit{Álgebra Linear}. 3ª Edição. \linebreak
 \taba COELHO, Flávio Uhoa. \textit{Um Curso de Álgebra Linear}. 2ª Edição.
 \taba WIKIBOOKS. \textit{Álgebra Linear}. Edição de 24/01/2014. \linebreak
+
 \end{flushleft}
 
 \end{document}
