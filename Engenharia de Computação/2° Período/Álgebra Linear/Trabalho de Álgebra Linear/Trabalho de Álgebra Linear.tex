@@ -50,22 +50,12 @@
 
 \textbf{1. Matrizes canônicas e transformações lineares} \linebreak
 
-\tab \textbf{I) Isomorfismo:} Seja $\phi: V \rightarrow W$ uma transformação linear. Para que ela exista, é necessário que sejam atendidas algumas condições: \linebreak
 
-\tabb a) $V$ e $W$ precisam estar sobre o mesmo plano \linebreak
-\tabb b) $\phi$ precisa ser bijetora, ou seja, todo elemento em W precisa ser necessáriamente e exclusivamente a imagem de um elemento em V\linebreak
-\tabb c) $\phi$ deve obedecer as regras de soma e multiplicação por escalar: \linebreak
-\taba $\vv{v_1}, \vv{v_2} \in V$, $\phi(\vv{v_1}), \phi(\vv{v_2}) \in W$ e $c \in \mathbb{R} $ \linebreak
-\taba i) $\phi(\vv{v_1}) + \phi(\vv{v_2}) = \phi(\vv{v_1} + \vv{v_2}) $ \linebreak
-\taba ii) $\phi(c*\vv{v_1}) = c*\phi(\vv{v_1}) $ \linebreak
-
-\tab \textbf {II) Homomorfismo:} Denomina-se uma transformação linear homomórfica a transformação  $T: V \rightarrow W$ em que a função T não é bijetora. \linebreak
-
-\tab \textbf{III) Base de uma Transformação:} Seja $V$ um espaço vetorial finito onde $ n = dim(V)$ e $\beta = \{ \vv{v_1}, \vv{v_2}, ..., \vv{v_n} \}$ a base deste espaço. Sendo assim, posso escrever todos os vetores deste espaço através da combinação $\vv{v} = c_1\vv{v_1} + c_2\vv{v_2} + ... + c_n\vv{v_n}$, onde $c$ pertence, claro, ao mesmo plano que os o espaço vetorial.  Neste caso, $\begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}$ é a matriz das coordenadas de $V$.\linebreak
+\tab \textbf{I) Base de uma Transformação:} Seja $V$ um espaço vetorial finito onde $ n = dim(V)$ e $\beta = \{ \vv{v_1}, \vv{v_2}, ..., \vv{v_n} \}$ a base deste espaço. Sendo assim, posso escrever todos os vetores deste espaço através da combinação $\vv{v} = c_1\vv{v_1} + c_2\vv{v_2} + ... + c_n\vv{v_n}$, onde $c$ pertence, claro, ao mesmo plano que os o espaço vetorial.  Neste caso, $\begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}$ é a matriz das coordenadas de $V$.\linebreak
 
 \tabb Se tenho uma a transformação linear $T: V \rightarrow W$, assim como a base de $V$, consigo dizer onde estão todos os vetores de $T(V)$, pois segundo as regras c.i) e c.ii) podemos dizer que $T(\vv{v})=T(c_1\vv{v_1}+c_2\vv{v_2}+...+c_n\vv{v_n})=$ $T(c_1\vv{v_1})+T(c_2\vv{v_2})+...+T(c_n\vv{v_n})= $ $c_1T(\vv{v_1})+c_2T(\vv{v_2})+...$ $ + c_nT(\vv{v_n})$ \linebreak
 
-\tab \textbf{IV) Imagem e núcleo de uma Transformação:} Sendo $T: V \rightarrow W$, $Im(T) = \{ \vv{w} \in W | $ $ \vv{w} = T(\vv{v})$ para alguns $\vv{v} \in V\}$, ou seja, a Imagem de uma Transformação corresponde ao subespaço vetorial de W que possui elementos dados por $T(\vv{v})$. Sendo assim, logicamente $Im(T) \leq W$. \linebreak
+\tab \textbf{II) Imagem e núcleo de uma Transformação:} Sendo $T: V \rightarrow W$, $Im(T) = \{ \vv{w} \in W | $ $ \vv{w} = T(\vv{v})$ para alguns $\vv{v} \in V\}$, ou seja, a Imagem de uma Transformação corresponde ao subespaço vetorial de W que possui elementos dados por $T(\vv{v})$. Sendo assim, logicamente $Im(T) \leq W$. \linebreak
 
 \tab Já o núcleo de uma Transformação (denotado por $Ker(T)$) é dado por $Ker(T) = \{ \vv{v} \in V $ $ | T(\vv{v}) = 0\}$. Se a transformação é injetora, o núcleo é trivial, afinal $T(0)$ deve obrigatóriamente pertencer à $Im(T)$. Porém caso ela não seja injetora, o núcleo poderá ser um conjunto vetorial. Sendo assim, obrigatoriamente, $Ker(T)$ é um subespaço vetorial de $V$ \linebreak
 
@@ -76,8 +66,43 @@
 \taba $Ker(T) = $ $? \rightarrow Ker(T) = {(x,y,z)|(2x-y+z,3x+y-2z) = (0,0)}$ \linebreak
 \taba $\begin{cases} 2x-y+z=0\\ 3x+y-2=0 \end{cases} \implies 5x-z = 0 \implies 5x = z$ \newline
 \newline \taba \hspace{3.15cm} $\implies 2x-y+z =0 \implies 2x-y+5x =0 \implies 7x = y$
-\newline \taba $Ker(T) = \{(x,7x,5x) | x \in \mathbb{R}\}$
+\newline \taba $Ker(T) = \{(x,7x,5x) | x \in \mathbb{R}\}$ \linebreak
 \\
+\tab \textbf{III) Isomorfismo:} Seja $\phi: V \rightarrow W$ uma transformação linear. Para que ela exista, é necessário que sejam atendidas algumas condições: \linebreak
+
+\tabb a) $V$ e $W$ precisam estar sobre o mesmo plano \linebreak
+\tabb b) $\phi$ precisa ser bijetora, ou seja, todo elemento em W precisa ser necessáriamente e exclusivamente a imagem de um elemento em V\linebreak
+\tabb c) $\phi$ deve obedecer as regras de soma e multiplicação por escalar: \linebreak
+\taba $\vv{v_1}, \vv{v_2} \in V$, $\phi(\vv{v_1}), \phi(\vv{v_2}) \in W$ e $c \in \mathbb{R} $ \linebreak
+\taba i) $\phi(\vv{v_1}) + \phi(\vv{v_2}) = \phi(\vv{v_1} + \vv{v_2}) $ \linebreak
+\taba ii) $\phi(c*\vv{v_1}) = c*\phi(\vv{v_1}) $ \linebreak
+
+\tab \textbf {IV) Homomorfismo:} Denomina-se uma transformação linear homomórfica a transformação  $T: V \rightarrow W$ em que a função T não é bijetora. \linebreak
+\\
+\tab \textbf{V) Matriz de uma transformação linear:} De modo geral, fixadas as bases $\beta = \{\vv{v_1}, \vv{v_2},...,\vv{v_n}\}$ e $\beta' = \{\vv{w_1},\vv{w_2},...,\vv{w_n}\}$, a matriz $A = \begin{bmatrix} a_{11} \ ... \ a_{1n} \\ \vdots \\ a_{n1} \ ... \ a_{nn} \end{bmatrix} $ podemos associar $T_A: \mathbb{R}^n \rightarrow \mathbb{R}^m$ e $ \vv{v} \rightarrow T_A(\vv{v})$. \linebreak
+\tab Seja $X =[\vv{v}]_\beta = \begin{bmatrix} x_1 \\ \vdots \\ x_n \end{bmatrix}$, logo $A*X = \begin{bmatrix} a_{11} \ ... \ a_{1n} \\ \vdots \\ a_{n1} \ ... \ a_{nn} \end{bmatrix} * \begin{bmatrix} x_1 \\ \vdots \\ x_n \end{bmatrix} = \begin{bmatrix} y_1 \\ \vdots \\ y_n \end{bmatrix}$ \linebreak
+\\
+\tab Então $T_A(\vv{v}) = y_1 \vv{w_1} + ... + y_m \vv{w_m}$ onde $y_i = A_i*X$ e $A_i$ é a i-ésima linha de $A$. Em geral, dada um matriz $A_{mxn}$, ela é tida como aplicação linear $T_A: \mathbb{R}^n \rightarrow \mathbb{R}^m$ em relação às bases canônics de $\mathbb{R}^n$ e $\mathbb{R}^m$.\linebreak
+\\
+\tab Sendo assim, encontraremos a matriz associada a uma transformação linear: seja $T: V \rightarrow W$ linear, $\beta = \{\vv{v_1}, \vv{v_2},...,\vv{v_n}\}$ base de $V$ e $\beta' = \{\vv{w_1},\vv{w_2},...,\vv{w_n}\}$ base de $W$, então $T(v_1),...,T(v_n)$ são vetores de $W$, e portanto \linebreak \newline \tab $\begin{matrix} T(\vv{v_1}) = a_{11}\vv{w_1} + ... + a_{m1}\vv{w_m} \\ \vdots \\ T(\vv{v_n}) = a_{1n}\vv{w_1} + ... + a_{an}\vv{w_m} \end{matrix}$ \linebreak
+\newline \tab A transposta da matriz de coeficientes deste sistema, denotada por ${[T]_{\beta'}^\beta}$ é chamada de matriz de $W$ em relação às bases $\beta$ e $\beta'$. \linebreak
+\newline \tab ${[T]_{\beta'}^\beta} = \begin{bmatrix} a_{11} \ ... \ a_{1n} \\ \vdots \\ a_{n1} \ ... \ a_{nn} \end{bmatrix} = A$ \linebreak \newline
+\\
+\tab \textbf{Ex. 2)} Dado $T: \mathbb{R}^3 \rightarrow \mathbb{R}^2, T(x,y,z) = (2x-y+z,3x+y-2z)$  e as bases \linebreak \tab $\alpha = \{\vv{v_1} = (1,1,1), \vv{v_2} = (0,1,1), \vv{v_3} = (0,0,1)\}$ \linebreak \tab $\beta = \{\vv{w1} = (0,1),  \vv{w_2} = (0,1)\}$ \linebreak \tab $T_\alpha^\beta = A = ?$ \linebreak  \newline 
+\\
+\tab * Matriz $T_\alpha^\beta$ é de ordem $2x3$:\newline
+\tab $T_\alpha^\beta=\begin{bmatrix} a_{11} \ a_{12} \ a_{13} \\ a_{21} \ a_{22} \ a_{23} \end{bmatrix}$ \linebreak
+\tab $\hspace{0.1cm}\begin{matrix}\hspace{0.2cm}\bigtriangledown \hspace{0.15cm}\ \bigtriangledown \ \hspace{0.15cm} \bigtriangledown\\ \hspace{0.2cm} T({\vv{v_1})_\beta} \ T{(\vv{v_2})_\beta} \ T{(\vv{v_3})_\beta}\end{matrix}$ \linebreak
+\newline 
+\newline \tab - $T(1,1,1) = (2-1+1,3+1-2) \implies T(1,1,1) = (2,2)$ 
+\newline \tab $(2,2) = a_{11}(1,0) + a_{21}(0,1) \implies (2,2) = (a_{11}, a_{22})$  \linebreak
+\newline \tab - $T(0,1,1) = (0-1+1,0+1-2) \implies T(0,1,1) = (0,-1)$ 
+\newline \tab $(0,-1) = a_{12}(1,0) + a_{22}(0,1) \implies (0,-1) = (a_{12}, a_{22})$  \linebreak
+\newline \tab - $T(0,0,1) = (0-0+1,0+0-2) \implies T(0,0,1) = (1,-2)$ 
+\newline \tab $(1,-2) = a_{13}(1,0) + a_{23}(0,1) \implies (1,-2) = (a_{13}, a_{23})$  \linebreak
+\newline \tab $T_\alpha^\beta$ = $\begin{bmatrix} 2 \ \hspace{0.45cm} 0 \hspace{0.45cm} 1 \\ 2 \ -1 \ -2 \end{bmatrix} $
+\newline \\
+\pagebreak
 \textbf{2. Operadores lineares}\linebreak
 
 \tab É chamado de Operador Linear a Transformação Linear $T$ tal que $T: V \rightarrow V$, ou seja, aquela na qual o domínio e o contradomínio pertencem ao mesmo espaço vetorial.\linebreak
@@ -187,17 +212,35 @@ a_{ 1,1}-\lambda & a_{1,2} & \cdots & a_{1,n} \\
 \textbf{5. Exercícios}\linebreak
 \tab \textbf{1) Verifique se as seguintes afirmações são verdadeiras ou falsas} \linebreak
 \taba \textbf{(a) Qualquer operador linear em $V$ é tal que $V = Ker(T) \oplus Im(T)$} \linebreak
-\taba Peguemos $x \in V$. Sendo $T = T^2$, temos $Tx = T^2x$ e logo $T(x-Tx) = 0$ \linebreak
+\taba Veradeiro. Peguemos $x \in V$. Sendo $T = T^2$, temos $Tx = T^2x$ e logo $T(x-Tx) = 0$ \linebreak
 \taba Sendo $x-Tx = \xi$ para alguns $\xi \in Ker(T)$, isso mostra que $V = Im(T) + Ker(P)$.
 \taba Agora pegue $y \in Im(T) \bigcap Ker(T)$. Visto que $y \in Im(T)$ temos que $y = Tz$ para alguns $z \in V$. Aplicando $T$ em ambos os lados nós obtemos $Ty = T^2z$. Só que $y \in Ker(T)$,  logo $0 = Ty = T^2z = Tz = y$. Isso mostra que $Im(T) \bigcap Ker(T) = 0 $ e logo temos que $V = Im(T) \oplus Ker(T)$. \linebreak
 \\
-\taba (b) Se $T:P_2\rightarrow\mathbb{R}^2$ uma transformação linear definida por $T:(at^2+bt+c) = (a-b$ $+c,  2a +b-c)$, então $\vv{p}(t)=5t+5 \in Ker(T)$ \linebreak
-\taba (c) Se $Ker(T)$ é gerado por três vetores $\vv{v_1}, \vv{v_2}, \vv{v_3}$, então a imagem de qualquer operador linear $T:\mathbb{R}^5\rightarrow\mathbb{R}^5$ tem dimensão 2\linebreak
-\taba (d) A aplicação linear $T:M(2,2)\rightarrow\mathbb{R}$ definida por $T\begin{pmatrix}\begin{bmatrix} a & b \\c & d\end{bmatrix}\end{pmatrix} = $ $2a+c-d$ é uma transformação linear\linebreak
-\taba (e) Existem transformações lineares $T:P_1 \rightarrow P_3$ sobrejetoras\linebreak
-\\
-\tab 2) Seja a transformação linear $T:\mathbb{R}^3 \rightarrow \mathbb{R}^2$ definida por $T(x,y,z) = (x-y+2z,4x+ $ $3y-z)$ determine: \linebreak
-\taba(a) A matriz canônica de $T$ \linebreak
+\taba \textbf{(b) Se $T:P_2\rightarrow\mathbb{R}^2$ uma transformação linear definida por $T:(at^2+bt+c) = (a-b$ $+c,  2a +b-c)$, então $\vv{p}(t)=5t+5 \in Ker(T)$} \linebreak
+\taba Verdadeiro. $T(at^2+bt+c) = (a-b+c, 2a+b-c) \implies T(5t+5) = (-5+5,5-5) = (0,0)$ \linebreak
+\taba Logo, $P(t) 5t+5 \in Ker(T)$ \linebreak \newline 
+\taba \textbf{(c) Se $Ker(T)$ é gerado por três vetores $\vv{v_1}, \vv{v_2}, \vv{v_3}$, então a imagem de qualquer operador linear $T:\mathbb{R}^5\rightarrow\mathbb{R}^5$ tem dimensão 2}\linebreak
+taba Verdadeiro. Pelo teorema do núcleo e da imagem podemos afirmar que dado $T: V \rightarrow W$, $dim(V) = dim(Ker(T)) + dim(Im(T)) \implies 5 = 3 +x \implies x = 2 \implies dim(Im(T)) = 2$ \linebreak
+\newline \ \taba \textbf{(d) A aplicação linear $T:M(2,2)\rightarrow\mathbb{R}$ definida por $T\begin{pmatrix}\begin{bmatrix} a & b \\c & d\end{bmatrix}\end{pmatrix} = $ $2a+c-d$ é uma transformação linear}\linebreak 
+\taba Verdadeiro. Para ser transofrmação linear:\linebreak 
+\taba a) $0 \in T$?  $\rightarrow T: \begin{bmatrix} 0 \ 0 \\ 0 \ 0 \end{bmatrix} = 0$ \linebreak
+\taba b) $T(\vv{u} + \vv{v}) = T(\vv{u}) + T(\vv{v})$\linebreak
+\taba \hspace{0.4cm}  $T(\vv{u} + \vv{v}) = T\begin{pmatrix} {\begin{bmatrix} a_1 & b_1 \\c_1 & d_1 \end{bmatrix}} + {\begin{bmatrix} a_2 & b_2 \\c_2 & d_2\end{bmatrix}}\end{pmatrix}$ \linebreak
+\taba \hspace{0.4cm}  $T(\vv{u} + \vv{v}) = (2(a_1+a-2) + (c_1+c_2) + (d_1+d_2))$ \linebreak
+\taba \hspace{0.4cm}  $T(\vv{u} + \vv{v}) = (2a_1 + c_1 + d_1) + (2a_2+c_2+d_2)$ \linebreak
+\taba \hspace{0.4cm}  $T(\vv{u} + \vv{v}) = T\begin{pmatrix}\begin{bmatrix} a_1 & b_1 \\c_1 & d_1\end{bmatrix}\end{pmatrix} +  T\begin{pmatrix}\begin{bmatrix} a_2 & b_2 \\c_2 & d_2\end{bmatrix}\end{pmatrix}$ 
+\linebreak \taba \hspace{0.4cm} $T(\vv{u} + \vv{v}) = T(\vv{u}) + T(\vv{v})$ \linebreak \newline
+\taba c) $T(\alpha \vv{u}) = \alpha T(\vv{u})$\linebreak
+\taba \hspace{0.4cm} $T(\alpha \vv{u}) = T\begin{pmatrix} {\alpha\begin{bmatrix} a_1 & b_1 \\c_1 & d_1 \end{bmatrix}}\end{pmatrix}$\linebreak
+\taba \hspace{0.4cm} $T(\alpha \vv{u}) = (2 \alpha a_1,\alpha c_1,-\alpha d_1)$ \linebreak
+\taba \hspace{0.4cm} $T( \alpha \vv{u} ) = \alpha T {\begin{pmatrix} {\begin{bmatrix} a_1 & b_1 \\c_1 & d_1 \end{bmatrix} } \end{pmatrix}} $ \linebreak
+\taba \hspace{0.4cm} $T(\alpha \vv{u}) = \alpha T(\vv{u})$ \linebreak
+\newline
+\taba \textbf{(e) Existem transformações lineares $T:P_1 \rightarrow P_3$ sobrejetoras}\linebreak
+\taba Falso, pois a transformação linear do domínio ($P_1$) não é capaz de gerar o contradomínio ($P_3$) por completo, por isso não é sobrejetora. 
+\newline \newline
+\tab \textbf{2) Seja a transformação linear $T:\mathbb{R}^3 \rightarrow \mathbb{R}^2$ definida por $T(x,y,z) = (x-y+2z,4x+ $ $3y-z)$ determine: \linebreak
+\taba(a) A matriz canônica de $T$}\linebreak
 \taba(b) O núcleo de $T$, uma base e a dimensão \linebreak
 \taba(c) A imagem de $T$, uma base e a dimensão \linebreak
 \\
