@@ -1,0 +1,39 @@
+
+<!-- saved from url=(0068)http://www3.nd.edu/~lemmon/projects/Odyssian-2009/Problem-Statement/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title> Microgrid Problem Statement </title></head>
+<body bgcolor="white">
+<br>
+<h2> Microgrid Project Problem Statement</h2>
+<br>
+<hr size="1">
+<p>Smart Grids [1] represent a vision for the future of power distribution in which grid stability and reliability are enhanced through reconfigurable control schemes operating across a wide range of temporal and spatial scales. "Smart" grids use a network of computers to control the grid's generation, load, and distribution assets. These computers communicate over large-scale communication networks. These computer networks provide tighter and faster coordination of geographically distributed grid components in a way that <em>hopefully</em> enhances overall grid reliability.
+</p><p>We use the word <em>hopefully</em> because the improper use of networked control can also degrade overall grid stability. Communication networks have throughput limitations that constrain how much information may be realistically passed between cooperating grid components. Limiting a control system's feedback information can easily degrade overall system stability. This is particularly true in large-scale systems where the sheer number of subsystem interactions make it difficult to anticipate all possible scenarios that lead to grid collapse. This means that there is great uncertainty in accurately assessing the impact "smart" networked control schemes might have on grid reliability and stability. 
+</p><p>A major challenge in in crafting a cyber-physical systems (CPS) initiative for the electrical power industry lies in finding a way to reduce these uncertainties. This project adopts an incremental approach towards developing smart grids in which we first develop distributed controllers for microgrids and then demonstrate the scalability of our solutions .This approach allows for the emergence of the smart grid from existing legacy grids through an evolutionary process.
+</p><p>Microgrids [2] are power distribution networks in which users and generators are in close proximity. Generation technologies include renewable microsources such as photovoltaic cells or wind turbines, as well as fossil fuel systems with efficient waste-heat recovery.  The integration of renewable microsources along with the relatively low electrical inertia of such systems introduces a considerable degree of uncertainty in the availability of generation. Finding a distributed way to manage this uncertainy represents one of the major challenges facing microgrid control. 
+</p><p>This project proposes using a two-level networked control architecture. The first level uses local microsource controllers [2] that mimic the power-frequency and reactive power-voltage droop characteristics used in controlling interconnected synchronous machines. This approach ensures stable microgrid operation for relatively small grids. The top level of the architecture consists of "intelligent" agents that communicate over a wireless mesh radio network. These agents control power dispatch and load shedding by solving certain optimization problems in a distributed manner. The form of these optimization problems is similar to those found in [3-6] that have been used for optimal microgrid restoration. Our implementation maximizes generation (load) power subject to distribution constraints. The novelty in our work lies in its use of a distributed optimization strategy similar to what has been successfully used in Internet [7] congestion control. Another novelty lies in our use of an event-triggered approach [8] to communication between cooperating agents. Experimental work has shown that event-triggered communication reduces, by several orders of magnitude, the amount of information that needs to be transmitted between agents.
+</p><p>The anticipated deployment of smart-grid technologies on the national grid must be done with some care. We favor an incremental approach that starts by studying smart-grid technologies (such as our proposed two-layer control architecture) to low power microgrids. This approach allows us to more easily study the scalability of multi-agent control architectures for electrical grids. We can then use those insights to identify a roadmap that reliably scales up smart-grid technologies to the national grid.<br>
+
+</p><hr size="1">
+<br>
+<b>References:</b>
+<br>
+<ol>
+<li>S. Massoud Amin and B.F. Wollenberg (2005), Towards a smart grid: power delivery for the 21st century, IEEE Power and Energy Magazine, volume 3, number 5, pages 34-41, 2005.</li>
+<li>R. Lasseter. Control and design of microgrid components (2006). Final Project Report - Power Systems<br>
+  Engineering Research Center (PSERC-06-03), 2006.</li>
+<li>K.L. Butler, N.D.R. Sarma, and V.R. Prasad (2001). Network reconfiguration for service restoration in shipboard power distribution systems. IEEE Transactions on Power Systems, 16(4):653–661, 2001.</li>
+<li>K.L. Butler-Purry and N.D.R. Sarma (2004). Self-healing reconfiguration for restoration of naval shipboard power systems. IEEE Transactions on Power Systems, 19(2):754–762, 2004.</li>
+<li>S. Khushalani, J.M Solanki, and N.N. Schulz (2007). Optimized restoration of unbalanced distribution systems. IEEE Transactions on Power Systems, 22(2):624–630, 2007.</li>
+<li>S. Khushalani, J. Solanki, and N. Schulz (2008). Optimized restoration of combined ac/dc shipboard power systems including distributed generation and islanding techniques. Electrical Power Systems Research, 78:1528–1536, 2008.  </li>
+<li>S.H. Low and D.E. Lapsley (1999). Optimization flow control, I: basic algorithm and convergence. IEEE/ACM Transactions on Networking (TON), 7(6):861–874, 1999.</li>
+<li>P.Wan andM.D. Lemmon (2009). Event-triggered distributed optimization in sensor networks. In Information Processing in Sensor Networks (IPSN), San Francisco, CA, USA, April, 2009.</li>
+</ol>
+
+
+<hr size="1">
+<br>
+<b> </b>
+
+
+</body></html>
