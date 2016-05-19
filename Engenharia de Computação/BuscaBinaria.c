@@ -1,37 +1,77 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define T 100
+#include <windows.h>
+#define T 100000
 
 void ordena (int vetor[T]);
 int buscaBinaria(int vetor[T], int busca);
+int buscaBinariaRecursiva(int vetor[T], int busca, int inicio, int fim);
 
 int main() {
 	
 	int vetor[T];
 
+	int Tinicio = GetTickCount(); 
+	
 	for (int i = 0; i < T; i++) {		
-		int r = rand() % 10000;  
+		int r = rand() % 1000000;  
 		vetor[i] = r;
-		printf("(%d, %d) ", i, vetor[i]);
-		if (i % 10 == 0 && i != 0)
-			printf ("\n");
+		//printf("(%d, %d) ", i, vetor[i]);
+		//if (i % 10 == 0 && i != 0)
+		//	printf ("\n");
 	}
 	
+	int Tfinal = GetTickCount();
+	
+	printf("\nTINICIAL: %d", Tinicio);
+	printf("\nTFINAL: %d", Tfinal);
+	printf("\nTEMPO GERAR VETOR: %d", Tfinal-Tinicio);
+	
+	printf ("\n");
+	
+	Tinicio = GetTickCount(); 
 	ordena(vetor);
+	Tfinal = GetTickCount();
 	
-	printf ("\n\n");
+	printf("\nTINICIAL: %d", Tinicio);
+	printf("\nTFINAL: %d", Tfinal);
+	printf("\nTEMPO ORDENAR VETOR: %d", Tfinal-Tinicio);
 	
-	for (int i = 0; i < T; i++) {
-		printf("(%d, %d) ", i, vetor[i]);
-		if (i % 10 == 0 && i != 0)
-			printf ("\n");
-	}
+	printf ("\n");
+	
+	//for (int i = 0; i < T; i++) {
+	//	printf("(%d, %d) ", i, vetor[i]);
+	//	if (i % 10 == 0 && i != 0)
+	//		printf ("\n");
+	//}
 		
 	int busca;
-	printf("\n\n Digite o valor a ser buscado: ");
+	printf("\n\nDigite o valor a ser buscado: ");
 	scanf("%d", &busca);
 	
+	printf("\n");
+	
+	Tinicio = GetTickCount(); 
 	int achou = buscaBinaria(vetor, busca);
+	Tfinal = GetTickCount();
+	
+	printf("\nTINICIAL: %d", Tinicio);
+	printf("\nTFINAL: %d", Tfinal);
+	printf("\nTEMPO BUSCA NORMAL: %d", Tfinal-Tinicio);
+
+	if (achou == -1) {
+		printf("\nValor nao encontrado");
+	}
+	
+	printf("\n\n");
+	
+	Tinicio = GetTickCount();
+	achou = buscaBinariaRecursiva(vetor, busca, 0, T-1);
+	Tfinal = GetTickCount();
+	
+	printf("\nTINICIAL: %d", Tinicio);
+	printf("\nTFINAL: %d", Tfinal);
+	printf("\nTEMPO BUSCA RECURSIVA: %d", Tfinal-Tinicio);
 
 	if (achou == -1) {
 		printf("\nValor nao encontrado");
@@ -59,7 +99,7 @@ int buscaBinaria(int vetor[T], int busca) {
 		meio = (int) (inicio+fim)/2;
 		
 		if (vetor[meio] == busca) {
-			printf("O valor %d esta na posicao %d", busca, meio);
+			printf("BUSCA NORMAL O valor %d esta na posicao %d", busca, meio);
 			return meio;
 		}
 		
@@ -71,4 +111,23 @@ int buscaBinaria(int vetor[T], int busca) {
 	}	
 	
 	return -1;
+}
+
+int buscaBinariaRecursiva(int vetor[T], int busca, int inicio, int fim) {
+	int meio = (inicio + fim)/2;
+			
+	if (inicio > fim)
+		return -1;
+	
+	if (vetor[meio] == busca) {
+		printf("BUSCA RECURSIVA O valor %d esta na posicao %d", busca, meio);
+		return meio;
+	}
+	
+	else {
+		if (busca > vetor[meio])
+			buscaBinariaRecursiva(vetor, busca, meio+1, fim);
+		else
+			buscaBinariaRecursiva(vetor, busca, inicio, meio-1);
+	}
 }
