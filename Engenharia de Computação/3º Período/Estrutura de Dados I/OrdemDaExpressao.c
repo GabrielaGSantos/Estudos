@@ -5,7 +5,7 @@
 #include "cStack.h"
 
 int main() {
-	char expressao[] = "41 * 30 / 23 * {[]52 - 23 * (4 - 3) - (3 * 5)]} / 5";
+	char expressao[] = "41 * 30 / 23 * {[52 - 23 * (4 - 3) - (3 * 5)]} / 5";
 	cStack pilha;
 	
 	init(&pilha);
