@@ -9,7 +9,7 @@
 #ifndef CSTACK_H_
 #define CSTACK_H_
 
-#define SIZE 10
+#define SIZE 50
 
 typedef struct cStack {
     char elements[SIZE];

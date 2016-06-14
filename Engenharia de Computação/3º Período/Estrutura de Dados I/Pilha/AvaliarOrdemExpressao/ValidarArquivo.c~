@@ -27,7 +27,7 @@ int main() {
 	} while (c != NULL);
 	
 	int resultado = avaliarAberturaEncerramento(arquivo, "{[(","}])");
-	int linhaErro = 0;
+	int linhaErro = 1;
 	for (int i = 0; i <= resultado; i++) {
 		if (arquivo[i] == '\n')
 			linhaErro++;
