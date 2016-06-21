@@ -1,44 +1,56 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../Bibliotecas/cStack.h"
-#include "../Bibliotecas/OrdemExpressao.h"
+#include "../Bibliotecas/iStack.h"
 
-void empilha(char *expressao, cStack *pilha);
-int desempilha(cStack *pilha);
+int desempilha(char operacao[3], iStack *pilha);
+void AdicionaValor(char valor[3], iStack *pilha);
+void adicionaExpressao(char *sentence, iStack *pilha);
 
 int main() {
-	cStack pilha;
+	iStack pilha;
 	init(&pilha, 1);
 	
-	char expressao[100] = "5 3 * 10 15 / 2 + -";
+	printf("INICIO CALCULADORA\n");
+
+	char expressao[50] = "2 50 30 + / 10 -";
 	
-	empilha(expressao, &pilha);
+	
+	printf("RESULTADO = %i \nFIM CALCULADORA\n", pop(&pilha));
 
 	return EXIT_SUCCESS;	
 }
 
-void empilha(char *expressao, cStack *pilha) {
-	for (int i = 0; expressao[i]; i++) {
-		if(in(expressao[i], "+-/*") >= 0) 
-			push(pilha, expressao[i]);
-		else if(in(expressao[i], " ") < 0) {
-			push(pilha, desempilha(pilha));
-		}
-	}
-	printf("%d", top(pilha));			
+void AdicionaValor(char valor[3], iStack *pilha) {
+	if((in(valor[0], " + / - * / ") <= 0))
+		push(pilha, atoi(valor));
+	else
+		push(pilha, desempilha(valor, pilha));
 }
 
-int desempilha(cStack *pilha) {
-	char operacao = pop(pilha);
-	if(operacao == '+')
-		return pop(pilha) + pop(pilha);	
-	if(operacao == '-')
+int desempilha(char *operacao, iStack *pilha) {
+	if(operacao[0] == '-')
 		return pop(pilha) - pop(pilha);	
-	if(operacao == '*')
-		return pop(pilha) * pop(pilha);
-	if(operacao == '/')
-		return pop(pilha) / pop(pilha);
-	else
-		return -1;
+
+	if(strcmp(operacao, "+") == 0)
+		return pop(pilha) + pop(pilha);	
+
+	if(strcmp(operacao, "*") == 0)
+		return pop(pilha) * pop(pilha);	
+
+	if(operacao[0] == '/')
+		return pop(pilha) / pop(pilha);	
+
+	printf("ERRO NA OPERACAO");
+	return -1;
 }
+
+void adicionaExpressao(char *sentence, iStack *pilha) {
+	char *vAtual = strtok(sentence, " ");	
+		
+	while(vAtual != NULL) {
+		AdicionaValor(vAtual, pilha);
+		vAtual = strtok(NULL, " ");	
+	}
+}
+

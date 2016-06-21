@@ -6,41 +6,33 @@
  * Autor: João Paulo D. Preti                                             *
  **************************************************************************/
 
-#ifndef ISTACK_H_
-#define ISTACK_H_
+#ifndef SSTACK_H_
+#define SSTACK_H_
 
-#define SIZE 100
+#define SIZE 10
 
-typedef struct iStack {
-    int elements[SIZE];
+typedef struct sStack {
+    char *elements[SIZE];
     int top;
     int id;
-}iStack;
+}sStack;
 
-int in(char elemento, char elementos[]);
-void init(iStack *stack, int id);
-void push(iStack *stack, int element);
-int pop(iStack *stack);
-int top(iStack *stack);
-int isEmpty(iStack *stack);
-int isFull(iStack *stack);
-int size(iStack *stack);
-int capacity(iStack *stack);
-void show(iStack *stack);
+void init(sStack *stack, int id);
+void push(sStack *stack, char *element);
+char* pop(sStack *stack);
+char* top(sStack *stack);
+int isEmpty(sStack *stack);
+int isFull(sStack *stack);
+int size(sStack *stack);
+int capacity(sStack *stack);
+void show(sStack *stack);
 
-int in(char elemento, char elementos[]) {
-	for (int i = 0; elementos[i]!=0; i++)
-		if (elemento == elementos[i])
-			return i;
-	return -1;
-}
-
-void init(iStack *stack, int id) {
+void init(sStack *stack, int id) {
     stack->top = -1;
     stack->id = id;
 }
 
-void push(iStack *stack, int element) {
+void push(sStack *stack, char *element) {
     if (!isFull(stack)) {
         stack->top++;
         stack->elements[stack->top]=element;
@@ -48,41 +40,40 @@ void push(iStack *stack, int element) {
         printf("Push not allowed: stack is full.\n");
 }
 
-int pop(iStack *stack) {
+char* pop(sStack *stack) {
     if (!isEmpty(stack)) {
         stack->top--;
         return stack->elements[stack->top+1];
     } else {
         printf("Pop not allowed: stack is empty.\n");
-        return -1;
+        return "";
     }
 }
 
-int top(iStack *stack) {
-    return isEmpty(stack)?-1:stack->elements[stack->top];
+char* top(sStack *stack) {
+	return (isEmpty(stack))?" ":stack->elements[stack->top];
 }
 
-int isEmpty(iStack *stack) {
+int isEmpty(sStack *stack) {
     return stack->top==-1;
 }
 
-int isFull(iStack *stack) {
+int isFull(sStack *stack) {
     return stack->top==SIZE-1;
 }
 
-int size(iStack *stack) {
+int size(sStack *stack) {
     return stack->top+1;
 }
 
-int capacity(iStack *stack) {
+int capacity(sStack *stack) {
     return SIZE;
 }
 
-void show(iStack *stack) {
+void show(sStack *stack) {
     while (!isEmpty(stack)) {
-        printf("%d\n", pop(stack));
+        printf("%s", pop(stack));
     }
 }
 
-#endif /* ISTACK_H_ */
-
+#endif /* SSTACK_H_ */

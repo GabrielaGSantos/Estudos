@@ -9,14 +9,15 @@
 #ifndef ISTACK_H_
 #define ISTACK_H_
 
-#define SIZE 10
+#define SIZE 100
 
 typedef struct iStack {
     int elements[SIZE];
     int top;
+    int id;
 }iStack;
 
-void init(iStack *stack);
+void init(iStack *stack, int id);
 void push(iStack *stack, int element);
 int pop(iStack *stack);
 int top(iStack *stack);
@@ -26,8 +27,16 @@ int size(iStack *stack);
 int capacity(iStack *stack);
 void show(iStack *stack);
 
-void init(iStack *stack) {
+int in(char elemento, char elementos[]) {
+	for (int i = 0; elementos[i]!=0; i++)
+		if (elemento == elementos[i])
+			return i;
+	return -1;
+}
+
+void init(iStack *stack, int id) {
     stack->top = -1;
+    stack->id = id;
 }
 
 void push(iStack *stack, int element) {
@@ -70,8 +79,9 @@ int capacity(iStack *stack) {
 
 void show(iStack *stack) {
     while (!isEmpty(stack)) {
-        printf("%d", pop(stack));
+        printf("%d\n", pop(stack));
     }
 }
 
 #endif /* ISTACK_H_ */
+
