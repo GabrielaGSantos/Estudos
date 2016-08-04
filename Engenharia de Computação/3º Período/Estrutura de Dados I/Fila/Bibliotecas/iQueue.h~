@@ -5,7 +5,7 @@
 #ifndef FILA_IQUEUE_H
 #define FILA_IQUEUE_H
 
-#define SIZE 10
+#define SIZE 100
 
 typedef struct iQueue {
 	int elements[SIZE];
@@ -61,7 +61,7 @@ int dequeue(iQueue *queue) {
 }
 
 int peek(iQueue *queue) {
-	return queue->elements[queue->beginning];
+	return queue->elements[queue->beginning+1];
 }
 
 int isEmpty(iQueue *queue) {

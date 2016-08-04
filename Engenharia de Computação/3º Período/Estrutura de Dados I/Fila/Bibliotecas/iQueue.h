@@ -5,7 +5,7 @@
 #ifndef FILA_IQUEUE_H
 #define FILA_IQUEUE_H
 
-#define SIZE 10
+#define SIZE 200
 
 typedef struct iQueue {
 	int elements[SIZE];

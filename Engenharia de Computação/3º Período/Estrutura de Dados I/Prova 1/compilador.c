@@ -31,7 +31,7 @@ void lerArquivo(char *nomeDoArquivo, sStack *stack, char *subrotina) {
 			if (strcmp(buffer, "return\n") != 0) {
 				strcpy(acao, strtok(buffer, " ")); // DIVIDE NO ESPACO, PRIMEIRA PARTE É A ACAO
 				strcpy(arg, strtok(NULL, " ")); // SEGUNDA PARTE É O ARGUMENTO
-			}
+			} 
 			
 			else {
 				strcpy(acao, "return");
