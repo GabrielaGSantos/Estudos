@@ -156,11 +156,20 @@ void show(iDeque *deque) {
 }
 
 int get(iDeque *deque, int i) {
-    if(deque->beggining + i > SIZE-1) {
-        i = (deque->beggining + i) - SIZE;
-    }
+    if (i > SIZE-1) {
+    
+        if(deque->beggining + i > SIZE-1) {
+            i = (deque->beggining + i) - SIZE;
+        }
 
     return deque->elements[i];
+    
+    }
+    
+    else {
+        printf("OUT OF RANGE");
+        return -1;
+    }
 }
 
 #endif /* FILA_IDEQUE_H_ */
