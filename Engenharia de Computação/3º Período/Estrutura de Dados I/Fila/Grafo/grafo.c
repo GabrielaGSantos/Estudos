@@ -13,7 +13,7 @@ int main() {
 	zerarMatriz(cidades);
 	
 	//cidades[ORIGEM][DESTINO]
-	cidades[4][0] = cidades[0][1] = cidades[5][1] = cidades[3][4] = cidades[1][2] = cidades[3][2] = cidades[2][4] = 1;	
+	cidades[4][0] = cidades[0][1] = cidades[5][1] = cidades[3][4] = cidades[1][2] = cidades[3][2] = cidades[2][4] = 2;	
 
 	int origem = 3;
 
