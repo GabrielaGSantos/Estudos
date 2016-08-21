@@ -1,88 +1,90 @@
-//BIBLIOTECA FILA VITOR BRUNO
+// iQueue do Aluno Vitor Bruno de Oliveira Barth
+
+#define SIZE 1000
 
 #include <stdio.h>
 
-#ifndef FILA_IQUEUE_H
-#define FILA_IQUEUE_H
-
-#define SIZE 200
-
-typedef struct iQueue {
+typedef struct {
 	int elements[SIZE];
+	int size;
+	int begin;
 	int end;
-	int beginning;
-	int nElements;
+	int id;
 } iQueue;
 
-void init(iQueue *queue);
-void enqueue(iQueue *queue, int element); // Adiciona elemento na posicao N
-int dequeue(iQueue *queue); // Remove o primeiro elemento e manda os outros pra frente
-int peek(iQueue *queue); // Mostra a primeira posicao
-int isEmpty(iQueue *queue); 
+void init(iQueue *queue, int id);
+void enqueue(iQueue *queue, int element);
+int dequeue(iQueue *queue);
+int peek(iQueue *queue);
+int isEmpty(iQueue *queue);
 int isFull(iQueue *queue);
-int size(iQueue *queue); // Numero de elementos
-int capacity(iQueue *queue); // Quantos elementos suporta
-void show(iQueue *queue); // Loop de dequeue
+int size(iQueue *queue);
+int capacity(iQueue *queue);
+void show(iQueue *queue);
 
-void init(iQueue *queue) {
-	queue->end = 0;
-	queue->beginning = -1;
-	queue->nElements = 0;
+void init(iQueue *queue, int id) {
+	queue->size=queue->begin=queue->end=0;
+	queue->id = id;
 }
 
 void enqueue(iQueue *queue, int element) {
-	if (!isFull(queue)) {
-		queue->elements[queue->end] = element;
-		queue->end++;
-		queue->nElements++;		
-		if (queue->end == SIZE)
-			queue->end = 0;	
+	if(!isFull(queue)) {
+		queue->elements[queue->end]=element;
+		if (queue->end==SIZE-1)
+			queue->end = 0;
+		else
+			queue->end++;
+		queue->size++;
 	}
-	
-	else 
-		printf("CAN'T ENQUEUE! QUEUE IS FULL\n");
+
+	else
+		printf("\nCAN'T ENQUEUE, QUEUE IS FULL\n");
 }
 
 int dequeue(iQueue *queue) {
-	if (!isEmpty(queue)) {
-		queue->nElements--;
-		if (queue->beginning == SIZE-2) {
-			queue->beginning = -1;		
+	if(!isEmpty(queue)) {
+		if(queue->begin==SIZE-1) {
+			queue->begin=0;
 			return queue->elements[SIZE-1];
-		}	
-		queue->beginning = queue->beginning+1;	
-		return queue->elements[queue->beginning];
+		}
+		
+		else
+			return queue->elements[queue->begin--];
 	}
 
 	else {
-		printf("CAN'T DEQUEUE! QUEUE IS EMPTY\n");
+		printf("\nCAN'T DEQUEUE, QUEUE IS EMPTY\n");
 		return -1;
 	}
 }
 
 int peek(iQueue *queue) {
-	return queue->elements[queue->beginning+1];
+	if(!isEmpty(queue)) {
+		return queue->elements[queue->begin];
+	}
+
+	else {
+		printf("\nCAN'T PEEK, QUEUE IS EMPTY\n");
+		return -1;
+	}
 }
 
 int isEmpty(iQueue *queue) {
-	return queue->nElements == 0;
+	return queue->size==0;
 }
 
 int isFull(iQueue *queue) {
-	return queue->nElements==SIZE;
+	return queue->size==SIZE;
 }
-
 int size(iQueue *queue) {
-	return queue->nElements;
-}
+	return queue->size;
+} 
 
 int capacity(iQueue *queue) {
-	return SIZE;
+	return SIZE-queue->size;
 }
 
 void show(iQueue *queue) {
-	while (!isEmpty(queue))
-		printf("%i \n", dequeue(queue));
+	while(!isEmpty(queue))
+		printf("\n%d", dequeue(queue));
 }
-
-#endif

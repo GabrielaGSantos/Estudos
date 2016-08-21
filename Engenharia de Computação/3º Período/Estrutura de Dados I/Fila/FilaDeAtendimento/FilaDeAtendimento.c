@@ -21,7 +21,7 @@ int main() {
 	initZero(tempoCaixas);
 	initZero(tempoUltimoCliente);
 	iQueue fila;
-	init(&fila);
+	init(&fila, 0);
 
 	int tempoMedioEspera, tempoMaximoEspera;
 

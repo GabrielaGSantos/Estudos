@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../Bibliotecas/iStack.h"
+#include "iDeque.h"
 #define QDISCOS 3
 
-void mover(iStack *origem, iStack *destino);
-void hanoi (int qte, iStack *origem, iStack *auxiliar, iStack *destino);
+void mover(iDeque *origem, iDeque *destino);
+void hanoi (int qte, iDeque *origem, iDeque *auxiliar, iDeque *destino);
 
 int main() {
-	iStack pilha[3];	
+	iDeque pilha[3];	
 	
 	for (int i = 0; i < 3; i++)
 		init(&pilha[i], i+1);
@@ -20,12 +20,12 @@ int main() {
 	return EXIT_SUCCESS;
 }
 
-void mover(iStack *origem, iStack *destino) {
+void mover(iDeque *origem, iDeque *destino) {
 	push(destino, pop(origem));
 	printf("Movido o disco %i de P%i -> P%i\n", top(destino), origem->id, destino->id);
 }
 
-void hanoi (int qte, iStack *origem, iStack *auxiliar, iStack *destino) {
+void hanoi (int qte, iDeque *origem, iDeque *auxiliar, iDeque *destino) {
 	if (qte == 1)
 		mover(origem, destino);
 	else {

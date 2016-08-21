@@ -36,7 +36,7 @@ void zerarVetor(int vetor[N]) {
 void retornarDistancias(int cidades[N][N], int origem) {
 
 	iQueue fila;
-	init(&fila);
+	init(&fila, 0);
 
 	int vetorResultante[N];	
 	zerarVetor(vetorResultante);
