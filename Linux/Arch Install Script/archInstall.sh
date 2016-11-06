@@ -47,7 +47,7 @@ do
     if [ $tipoConexao -eq 1 ]
     then 
         echo "Abrindo wifi-menu"
-        wifi-menu
+        sudo wifi-menu
         printf "\nAguardando conexao..."
         sleep 10s
     fi
