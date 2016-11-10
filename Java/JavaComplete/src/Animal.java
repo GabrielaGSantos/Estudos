@@ -35,6 +35,9 @@ public class Animal {
 		
 		int modOfNumbers = 5%1;
 		System.out.println("5 % 3 = " + modOfNumbers);
+		
+		System.out.println("as");
+		
 	}
 	
 	public static void main(String args[]) {
