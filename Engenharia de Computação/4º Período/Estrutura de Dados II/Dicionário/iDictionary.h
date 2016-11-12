@@ -5,59 +5,61 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define KEY_SIZE 50
 
-typedef struct Node {
-    struct Node *next;
-    struct Node *previous;
+typedef struct node {
+    struct node *next;
+    struct node *previous;
     char key[KEY_SIZE];
     void *value;
-} Node;
+} node;
 
 typedef struct Dictionary {
-    Node *firstNode;
+    node *firstNode;
     void *firstValue;
     int size;
 } Dictionary;
 
-void init           (Dictionary *dictionary);
-void *get           (Dictionary *dictionary, char *key);
-No *getPrevious     (Dictionary *dictionary);
-void* getKeys       (Dictionary *dictionary);
+void dInit           (Dictionary *dictionary);
+void *dGet           (Dictionary *dictionary, char *key);
+node *getPrevious     (Dictionary *dictionary, char *key);
+node* getKeys       (Dictionary *dictionary);
 void* getValues     (Dictionary *dictionary);
 int put             (Dictionary *dictionary, char key[], void *value);
-void remove         (Dictionary *dictionary, char key[]);
-int isEmpty         (Dictionary *dictionary);
-int size            (Dictionary *dictionary);
+void dRemove         (Dictionary *dictionary, char key[]);
+int dIsEmpty         (Dictionary *dictionary);
+int dSize            (Dictionary *dictionary);
+int setFirstValue   (Dictionary *dictionary, char *key);
 
-void init           (Dictionary *dictionary) {
-    Node new_node = (Node) malloc(sizeof(Node));
-    new_node->previous = *new_node;
-    new_node->next = *new_node;
-    dictionary->firstNode = *new_node;
+void dInit           (Dictionary *dictionary) {
+    node* new_node = (node*) malloc(sizeof(node));
+    new_node->previous = new_node;
+    new_node->next = new_node;
+    dictionary->firstNode = new_node;
     dictionary->size = 0;
 }
 
-void *get           (Dictionary *dictionary, char *key) {
-    if (size == 0) return -1;
+void *dGet           (Dictionary *dictionary, char *key) {
+    if (dSize(dictionary) == 0) return dictionary->firstNode;
 
-    Node testNode = dictionary->firstNode; 
+    node* testNode = dictionary->firstNode; 
 
     do {
         if (testNode->key == key)
-            return testNode.value;
+            return testNode;
         else
             testNode = testNode->next;
     } while (testNode != dictionary->firstNode);
 
-    return -1;
+    return dictionary->firstNode;
 }
 
-No *getPrevious     (Dictionary *dictionary, char *key) {    
-    if (size == 0) return dictionary->firstNode;
+node *getPrevious     (Dictionary *dictionary, char *key) {    
+    if (dSize(dictionary) == 0) return dictionary->firstNode;
     
-    Node testNode = dictionary->firstNode; 
+    node* testNode = dictionary->firstNode; 
 
     do {
         if (testNode->next->key >= key)
@@ -66,28 +68,28 @@ No *getPrevious     (Dictionary *dictionary, char *key) {
             testNode = testNode->next;
     } while (testNode != dictionary->firstNode);
 
-    return -1;
+    return dictionary->firstNode;
 }
 
-void* getKeys       (Dictionary *dictionary) {
-    return dictionary->firstNode->key;
+node* getKeys       (Dictionary *dictionary) {
+    return dictionary->firstNode;
 }
 void* getValues     (Dictionary *dictionary) {
     return dictionary->firstValue;
 }
 
 int put             (Dictionary *dictionary, char key[], void *value) {
-    Node newNode = malloc(sizeof(Node));
-    Node previousNode = getPrevious(dictionary, key);
+    node* newNode = (node*) malloc(sizeof(node));
+    node* previousNode = getPrevious(dictionary, key);
 
     if (key == previousNode->next->key)
         return -1;
 
-    newNode->key = key;
+    strcpy(newNode->key, key);
     newNode->value = value;
 
-    if (size(dictionary) == 0)
-        previousNode->previous = *newNode;
+    if (dSize(dictionary) == 0)
+        previousNode->previous = newNode;
     
     previousNode->next->previous = newNode;
     previousNode->next = newNode;
@@ -95,26 +97,25 @@ int put             (Dictionary *dictionary, char key[], void *value) {
     return 0;
 }
 
-void remove         (Dictionary *dictionary, char key[]) {
-    Node previousNode = getPrevious(dictionary, key);
-    Node toBeRemovedNode = previousNode->next;
+void dRemove         (Dictionary *dictionary, char key[]) {
+    node* previousNode = getPrevious(dictionary, key);
+    node* toBeRemovedNode = previousNode->next;
     previousNode->next = toBeRemovedNode->next;
     toBeRemovedNode->previous = previousNode;
     free(toBeRemovedNode);
-    return 0;
 }
 
-int isEmpty         (Dictionary *dictionary) {
-    return size(dictionary) == 0;
+int dIsEmpty         (Dictionary *dictionary) {
+    return dSize(dictionary) == 0;
 }
 
-int size            (Dictionary *dictionary) {
-    return size(dictionary);
+int dSize            (Dictionary *dictionary) {
+    return dictionary->size;
 }
 
 int setFirstValue   (Dictionary *dictionary, char *key) {
-    if (size > 0)
-        dictionary->firstValue = get(dictionary, key);
+    if (dSize(dictionary) > 0)
+        dictionary->firstValue = dGet(dictionary, key);
     else 
         return -1;
 
