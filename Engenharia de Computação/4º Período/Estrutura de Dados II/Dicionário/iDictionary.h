@@ -88,8 +88,10 @@ int put             (Dictionary *dictionary, char key[], void *value) {
     strcpy(newNode->key, key);
     newNode->value = value;
 
-    if (dSize(dictionary) == 0)
+    if (dSize(dictionary) == 0) {
         previousNode->previous = newNode;
+        dictionary->firstNode = newNode;
+    }
     
     previousNode->next->previous = newNode;
     previousNode->next = newNode;
