@@ -157,11 +157,12 @@ int   add			(wordList *words, char word[WORD_SIZE]) {
 }
 
 void  show			(No *no, char buffer[WORD_SIZE], int i) {
-	buffer[0] = no->character;
-	for (i=i+1; no; no=no->nextChar, i++) {
-		buffer[i] = no->character;
-		if (no->nextWord) {
-			show(no->nextWord, buffer, i);
+	No * aux = no;
+	buffer[0] = ' ';
+	for (i=i+1; aux; aux=aux->nextChar, i++) {
+		buffer[i] = aux->character;
+		if (aux->nextWord) {
+			show(aux->nextWord, buffer, i);
 		}
 	}
 	printf("%s\n", buffer);
@@ -169,9 +170,10 @@ void  show			(No *no, char buffer[WORD_SIZE], int i) {
 
 int   getWordsQtty  (No *start) {
 	int count = 1; // Começa em 1 pq eu já estou eu julgo que já estou em uma palavra
-	for (; start->nextChar; start=start->nextChar) {
-		if (start->nextWord)
-			count += getWordsQtty(start->nextWord);
+	No * aux;
+	for (aux = start; aux->nextChar; aux=aux->nextChar) {
+		if (aux->nextWord)
+			count += getWordsQtty(aux->nextWord);
 	}
 	return count;
 }
