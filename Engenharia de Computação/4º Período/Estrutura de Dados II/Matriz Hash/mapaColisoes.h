@@ -97,7 +97,7 @@ void printCollisionMap  (int collisionTable[MAPSIZE][MAPSIZE]) {
 		"# P2 PPM Image Format"
 	};
 
-	fprintf(image, "%s\n%s\n%d %d 15\n", header[0], header[1], resolutionWidth, resolutionHeight);
+	fprintf(image, "%s\n%s\n%d %d 20\n", header[0], header[1], resolutionWidth, resolutionHeight);
 
 	for (int i = 0; i < MAPSIZE; i++) { // ITERATES MLINES
 		for (int j = 0; j < blockSizeHeight; j++) { // ITERATES EACH LINE PIXELS HEIGHT
